@@ -2,7 +2,7 @@
 
 ## Miembros del grupo LX-XXX-X (sustituir)
 
-1. Apellidos, Nombre
+  1. López Aguilera, Manuel
 1. Apellidos, Nombre
 1. Apellidos, Nombre
 1. Apellidos, Nombre

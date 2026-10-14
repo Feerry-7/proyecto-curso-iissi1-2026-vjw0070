@@ -5,15 +5,26 @@
 1. López Aguilera, Manuel
 1. Sánchez García, Antonio Manuel
 1. Apellidos, Nombre
-1. Apellidos, Nombre
+1. Zhou, You
 
 ## 1. Introducción al problema
 
 - Descripción del problema para poner en contexto el proyecto, incluyendo información sobre los clientes y usuarios, la situación actual, problemas, expectativas, etc. Se valorará la presencia de información multimedia (fotos, gráficos, documentos escaneados, etc.).
 
 ## 2. Glosario de términos
+Concertación de citas: proceso mediante el cual se solicita, acuerda y registra una cita veterinaria para una mascota, asignándole una fecha, hora y veterinario correspondiente.
 
-- Términos específicos del dominio del problema, ordenados alfabéticamente. Se valorará la presencia de información multimedia.
+Estado de pedido: situación actual de un pedido durante su procesamiento, por ejemplo pendiente, preparado, enviado, entregado o cancelado.
+Inventario:  conjunto de productos disponibles en la tienda y las cantidades existentes de cada uno de ellos.
+
+Reposición: incorporación de nuevas unidades de un producto al inventario para recuperar su disponibilidad.
+
+Stock: cantidad disponible de un determinado producto en un momento concreto.
+
+Comercio electrónico: actividad de compra y venta de productos realizada a través de Internet.
+Gestión centralizada: organización de la información y las operaciones de la tienda mediante un único sistema, evitando utilizar herramientas independientes.
+
+Duplicidad de datos: situación en la que una misma información se encuentra almacenada varias veces, lo que puede provocar inconsistencias o errores.
 
 ## 3. Visión general del sistema
 

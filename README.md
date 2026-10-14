@@ -392,6 +392,16 @@ quiero almacenar la información identificativa de los usuarios:
 para autenticar a los usuarios y gestionar las operaciones comerciales de forma personalizada. 
 
  #### **Prueba de aceptación**
+-Comprobar que se puede registrar un usuario con su ID, nombre, apellidos, correo electrónico, teléfono, nombre de usuario, contraseña y rol.
+-Comprobar que no se permite registrar dos usuarios con el mismo ID.
+-Comprobar que no se permite registrar dos usuarios con el mismo correo electrónico.
+-Comprobar que se pueden registrar usuarios con los roles de Cliente, Empleado o Gerente.
+-Comprobar que los empleados pueden registrar su DNI y fecha de contratación.
+-Comprobar que no se permite registrar dos empleados con el mismo DNI.
+-Comprobar que los clientes pueden guardar y consultar sus direcciones de entrega.
+-Comprobar que se puede consultar y actualizar la información de un usuario según los permisos de su rol.
+-Comprobar que las contraseñas se almacenan de forma segura y no se muestran en texto legible.
+
 
 #### RI-002: Información de animales
 Como empleado de la tienda,
@@ -400,6 +410,13 @@ ID de Mascota (único), Nombre, Especie, Raza, Sexo, Fecha de nacimiento, Imagen
 para llevar un control individualizado de cada mascota y poder relacionarla con sus citas y servicios veterinarios.
 
 #### **Prueba de aceptación**
+-Comprobar que se puede registrar una mascota con su ID, nombre, especie, raza, sexo, fecha de nacimiento, fotografía y cliente propietario.
+-Comprobar que no se permite registrar dos mascotas con el mismo ID.
+-Comprobar que cada mascota queda asociada a un cliente propietario registrado.
+-Comprobar que se puede consultar la información de una mascota.
+-Comprobar que se puede modificar la información de una mascota cuando sea necesario.
+-Comprobar que se puede guardar y consultar la fotografía de una mascota.
+-Comprobar que se pueden consultar todas las mascotas asociadas a un cliente.
 
 #### RI-003: Información de productos y categorías
 Como empleado,
@@ -410,6 +427,16 @@ Cada producto estará asociado a una categoría y podrá ser suministrado por un
 para organizar el catálogo de productos y mantener actualizada la información del inventario.
 
 #### **Prueba de aceptación**
+-Comprobar que se puede registrar un producto con su ID, nombre, descripción, precio, stock y fotografía.
+-Comprobar que no se permite registrar dos productos con el mismo ID.
+-Comprobar que el precio de un producto debe ser estrictamente superior a 0 €.
+-Comprobar que el stock de un producto no puede ser negativo.
+-Comprobar que se puede registrar una categoría con su ID, nombre y descripción.
+-Comprobar que no se permite registrar dos categorías con el mismo ID.
+-Comprobar que cada producto queda asociado a una categoría existente.
+-Comprobar que se pueden consultar los productos pertenecientes a una categoría.
+-Comprobar que un producto puede estar asociado a uno o varios proveedores.
+-Comprobar que se puede consultar y actualizar la información de productos y categorías según los permisos correspondientes.
 
 #### RI-004: Información de proveedores
 Como Gerente, 
@@ -418,6 +445,14 @@ ID de Proveedor (único), Nombre de la empresa, CIF/DNI, Teléfono, Correo elect
 para mantener la trazabilidad de la procedencia de los artículos.
 
 #### **Prueba de aceptación**
+-Comprobar que se puede registrar un proveedor con su ID, nombre de empresa, identificador fiscal, teléfono, correo electrónico y dirección postal.
+-Comprobar que no se permite registrar dos proveedores con el mismo ID.
+-Comprobar que se puede consultar la información de un proveedor registrado.
+-Comprobar que se pueden actualizar los datos de contacto de un proveedor.
+-Comprobar que se puede consultar qué productos suministra cada proveedor.
+-Comprobar que un proveedor puede suministrar varios productos.
+-Comprobar que un producto puede estar asociado a varios proveedores.
+
 
 #### RI-005: Información de pedidos
 Como Gerente y cliente, 
@@ -426,7 +461,18 @@ ID de Pedido (único), Fecha y hora de creación, Cliente asociado, Empleado res
 para emitir justificantes de compra y llevar un registro financiero. 
 
 #### **Prueba de aceptación**
-
+-Comprobar que se puede registrar un pedido con su ID, fecha y hora, cliente asociado, canal de compra, estado, forma de pago e importe total.
+-Comprobar que no se permite registrar dos pedidos con el mismo ID.
+-Comprobar que se pueden asociar una o varias líneas de pedido, indicando el producto, la cantidad, el precio unitario y el subtotal.
+-Comprobar que se registra el empleado responsable cuando el pedido corresponde a una venta presencial.
+-Comprobar que se registra la dirección de envío cuando el pedido online requiere entrega a domicilio.
+-Comprobar que los gastos de envío se calculan de acuerdo con las reglas de negocio establecidas.
+-Comprobar que el importe total se corresponde con la suma de los subtotales de las líneas y los gastos aplicables.
+-Comprobar que el importe de los productos debe ser estrictamente superior a 20 € para que el pedido pueda tramitarse.
+-Comprobar que los gastos de envío son gratuitos cuando el importe de los productos supera los 70 € y que, en caso contrario, ascienden a 4,95 €.
+-Comprobar que, al completarse una venta, el stock de cada producto se reduce automáticamente según la cantidad adquirida.
+-Comprobar que una venta no puede provocar que el stock de un producto sea negativo.
+-Comprobar que se puede consultar la información de un pedido para emitir su justificante de compra y realizar su seguimiento.
 #### RI-006: Información de direcciones de entrega
 Como cliente,
 quiero registrar mis direcciones de entrega: 
@@ -434,6 +480,14 @@ ID de Dirección (único), Calle, Número, Piso/Puerta, Código Postal, Localida
 Para agilizar el proceso de compra online.
 
 #### **Prueba de aceptación**
+-Comprobar que un cliente puede registrar una dirección con su ID, calle, número, piso o puerta, código postal, localidad y provincia.
+-Comprobar que no se permite registrar dos direcciones con el mismo ID.
+-Comprobar que cada dirección queda asociada al cliente correspondiente.
+-Comprobar que un cliente puede guardar varias direcciones de entrega.
+-Comprobar que el cliente puede consultar y modificar sus direcciones guardadas.
+-Comprobar que el cliente puede seleccionar una dirección como predeterminada.
+-Comprobar que un cliente no puede tener más de una dirección predeterminada al mismo tiempo.
+-Comprobar que se puede seleccionar una dirección guardada durante la tramitación de un pedido online.
 
 #### RI-007: Información de citas veterinarias
 Como empleado de la tienda,
@@ -442,6 +496,15 @@ ID de Cita (único), Fecha, Hora, Estado de la cita (Solicitada, Confirmada, Can
 Para organizar la agenda veterinaria y mantener un registro de las citas solicitadas por los clientes.
 
 #### **Prueba de aceptación**
+-Comprobar que se puede registrar una cita con su ID, fecha, hora, estado, motivo, mascota asociada y veterinario asignado.
+-Comprobar que no se permite registrar dos citas con el mismo ID.
+-Comprobar que cada cita queda asociada a una mascota registrada.
+-Comprobar que se puede asignar un veterinario a una cita.
+-Comprobar que se puede consultar la agenda de citas de un veterinario.
+-Comprobar que se pueden consultar las citas asociadas a una mascota.
+-Comprobar que el estado de una cita solo puede tomar los valores permitidos: Solicitada, Confirmada, Cancelada o Atendida.
+-Comprobar que se puede registrar una solicitud de cita y actualizar su estado cuando se confirma, cancela o atiende.
+-Comprobar que las citas atendidas quedan identificadas con el estado correspondiente.
 
 #### RI-008: Información de consultas veterinarias
 Como veterinario,
@@ -450,7 +513,15 @@ ID de Consulta (único), Fecha y hora de realización, Observaciones clínicas, 
 Para mantener actualizado el historial clínico de cada mascota.
 
 #### **Prueba de aceptación**
-
+-Comprobar que se puede registrar una consulta con su ID, fecha y hora de realización, observaciones clínicas, mascota atendida y veterinario responsable.
+-Comprobar que no se permite registrar dos consultas con el mismo ID.
+-Comprobar que cada consulta queda asociada a la mascota atendida.
+-Comprobar que cada consulta identifica al veterinario responsable.
+-Comprobar que se puede asociar una consulta a la cita veterinaria correspondiente.
+-Comprobar que se puede consultar el historial de consultas de una mascota.
+-Comprobar que el veterinario puede registrar y consultar la información clínica de las consultas que atiende.
+-Comprobar que los usuarios que no disponen de permisos veterinarios no pueden acceder a la información clínica confidencial.
+-Comprobar que las observaciones clínicas registradas se conservan y pueden consultarse posteriormente por los usuarios autorizados.
 
 
 

@@ -161,7 +161,7 @@ para mantener controlada la disponibilidad de mercancía de la tienda.
 **Prueba de aceptación**
 - 
 
-####R.F.07. Realizar auditorías de inventario
+#### R.F.07. Realizar auditorías de inventario
 Como Gerente,
 quiero realizar auditorías del inventario, 
 para comprobar que las existencias registradas coinciden con las existencias reales de la tienda.
@@ -169,7 +169,7 @@ para comprobar que las existencias registradas coinciden con las existencias rea
 **Prueba de aceptación**
 - 
 
-####R.F.08. Registrar clientes
+#### R.F.08. Registrar clientes
 Como dependiente, 
 quiero registrar nuevos clientes, 
 para disponer de su información y poder gestionar sus compras y servicios.
@@ -182,7 +182,7 @@ Como Gerente,
 quiero consultar y modificar la información de los clientes, 
 para mantener sus datos actualizados.
 
-**Prueba de aceptación**
+#### **Prueba de aceptación**
 - 
 
 

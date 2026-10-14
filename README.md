@@ -1,6 +1,6 @@
-# Título Proyecto
+# PetGoo: Sistema de Información para la Gestión de una Tienda de Mascotas y Servicios Veterinarios
 
-## Miembros del grupo LX-XXX-X (sustituir)
+## Miembros del grupo L7-DF-4 
 
 1. López Aguilera, Manuel
 1. Sánchez García, Antonio Manuel

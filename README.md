@@ -389,7 +389,19 @@ No podrán existir dos usuarios con el mismo correo electrónico ni dos empleado
 
 
 ### 4.2. Mapa de historias de usuario (opcional)
+### 4.2. Mapa de historias de usuario
 
+El mapa de historias de usuario de PetGoo permite organizar las funcionalidades del sistema según las actividades principales que realizan los distintos tipos de usuarios. Se estructura en actividades generales y tareas más específicas, facilitando la comprensión del alcance del sistema y la relación entre las necesidades de los usuarios y los requisitos funcionales definidos.
+
+| Actividad principal | Historias de usuario |
+|---|---|
+| **Gestionar usuarios y clientes** | Registrar usuarios, iniciar sesión, gestionar permisos y mantener actualizados los datos de los clientes. |
+| **Gestionar catálogo e inventario** | Gestionar productos y categorías, consultar el catálogo, actualizar precios, consultar existencias y realizar auditorías de inventario. |
+| **Gestionar compras y pedidos** | Añadir productos al carrito, tramitar pedidos online, consultar compras, cancelar pedidos y gestionar pedidos recibidos. |
+| **Gestionar ventas** | Registrar las operaciones presenciales, consultar el historial de ventas y supervisar la actividad comercial. |
+| **Gestionar entregas** | Guardar direcciones de entrega y gestionar los envíos asociados a pedidos online. |
+| **Gestionar servicios veterinarios** | Registrar mascotas, solicitar y gestionar citas, consultar agendas y registrar consultas veterinarias. |
+| **Supervisar el negocio** | Consultar información de ventas, controlar el inventario y gestionar proveedores y reposiciones. |
 ### 4.3. Requisitos no funcionales (opcional)
 
 **R.N.F. 01. Título requisito no funcional**

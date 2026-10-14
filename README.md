@@ -30,6 +30,28 @@ Asimismo, la plataforma permitirá ampliar el canal de ventas de la empresa medi
 Con la implantación del sistema se espera mejorar el control del inventario, agilizar la gestión de pedidos y ventas y ofrecer una mejor experiencia de compra a los clientes.
 
 
+```mermaid
+flowchart TB
+    A["PetGoo"]
+
+    A --> B["Comprar productos"]
+    A --> C["Gestionar tienda"]
+    A --> D["Atender mascotas"]
+
+    B --> B1["Consultar catálogo"]
+    B --> B2["Añadir al carrito"]
+    B --> B3["Tramitar pedido"]
+
+    C --> C1["Gestionar productos"]
+    C --> C2["Controlar stock"]
+    C --> C3["Gestionar ventas"]
+
+    D --> D1["Registrar mascotas"]
+    D --> D2["Gestionar citas"]
+    D --> D3["Registrar consultas"]
+```
+
+
 ## 2. Glosario de términos
 Concertación de citas: proceso mediante el cual se solicita, acuerda y registra una cita veterinaria para una mascota, asignándole una fecha, hora y veterinario correspondiente.
 

@@ -382,13 +382,78 @@ Como gerente, quiero dar de alta y baja usuarios y gestionar sus permisos, para 
 
 
 
-#### 4.1.1. Requisitos de información
+### 4.1.1. Requisitos de información
+#### RI-001: Información de usuarios (Clientes, Empleados y Gerentes)
+Como Gerente del sistema,
+quiero almacenar la información identificativa de los usuarios: 
+              ID de Usuario (único), Nombre, Apellidos, Correo electrónico (único), Teléfono, Nombre              de usuario, Contraseña, Foto de perfil y Rol (Cliente, Empleado, Gerente).
+              En el caso de los Clientes: Direcciones de entrega guardadas. 
+              En el caso de los Empleados: DNI (único) y Fecha de contratación.  
+para autenticar a los usuarios y gestionar las operaciones comerciales de forma personalizada. 
+
+ #### **Prueba de aceptación**
+
+#### RI-002: Información de animales
+Como empleado de la tienda,
+quiero almacenar la información de las mascotas de los clientes:
+ID de Mascota (único), Nombre, Especie, Raza, Sexo, Fecha de nacimiento, Imagen/Foto y Cliente propietario asociado,
+para llevar un control individualizado de cada mascota y poder relacionarla con sus citas y servicios veterinarios.
+
+#### **Prueba de aceptación**
+
+#### RI-003: Información de productos y categorías
+Como empleado,
+quiero almacenar la información de los productos y sus categorías: 
+Producto: ID de Producto (único), Nombre, Descripción, Precio (€), Stock (unidades) y Foto.
+Categoría: ID de Categoría (único), Nombre y Descripción. 
+Cada producto estará asociado a una categoría y podrá ser suministrado por uno o varios proveedores,
+para organizar el catálogo de productos y mantener actualizada la información del inventario.
+
+#### **Prueba de aceptación**
+
+#### RI-004: Información de proveedores
+Como Gerente, 
+quiero registrar los datos de contacto de los proveedores: 
+ID de Proveedor (único), Nombre de la empresa, CIF/DNI, Teléfono, Correo electrónico y Dirección postal. 
+para mantener la trazabilidad de la procedencia de los artículos.
+
+#### **Prueba de aceptación**
+
+#### RI-005: Información de pedidos
+Como Gerente y cliente, 
+quiero registrar la información de cada pedido: 
+ID de Pedido (único), Fecha y hora de creación, Cliente asociado, Empleado responsable (si la venta es en tienda), Estado del pedido (Pendiente, En preparación, Enviado, Entregado, Cancelado), Forma de pago (Tarjeta, Efectivo), Dirección de envío, Gastos de envío, Importe total (€) , Líneas de pedido (Producto, Cantidad, Precio unitario y Subtotal) y canal( Online /Presencial) 
+para emitir justificantes de compra y llevar un registro financiero. 
+
+#### **Prueba de aceptación**
+
+#### RI-006: Información de direcciones de entrega
+Como cliente,
+quiero registrar mis direcciones de entrega: 
+ID de Dirección (único), Calle, Número, Piso/Puerta, Código Postal, Localidad, Provincia y Campo indicador de dirección seleccionada por defecto.
+Para agilizar el proceso de compra online.
+
+#### **Prueba de aceptación**
+
+#### RI-007: Información de citas veterinarias
+Como empleado de la tienda,
+quiero almacenar la información acerca de las citas veterinarias:
+ID de Cita (único), Fecha, Hora, Estado de la cita (Solicitada, Confirmada, Cancelada, Atendida), Motivo de la cita, Mascota asociada y Veterinario asignado.
+Para organizar la agenda veterinaria y mantener un registro de las citas solicitadas por los clientes.
+
+#### **Prueba de aceptación**
+
+#### RI-008: Información de consultas veterinarias
+Como veterinario,
+quiero almacenar la información correspondiente a las consultas realizadas:
+ID de Consulta (único), Fecha y hora de realización, Observaciones clínicas, Cita asociada, Mascota atendida y Veterinario responsable.
+Para mantener actualizado el historial clínico de cada mascota.
+
+#### **Prueba de aceptación**
 
 
-**Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
-- ...
+
+
 
 #### 4.1.2. Reglas de negocio
 

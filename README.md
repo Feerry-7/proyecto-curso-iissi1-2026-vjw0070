@@ -9,7 +9,26 @@
 
 ## 1. Introducción al problema
 
-- Descripción del problema para poner en contexto el proyecto, incluyendo información sobre los clientes y usuarios, la situación actual, problemas, expectativas, etc. Se valorará la presencia de información multimedia (fotos, gráficos, documentos escaneados, etc.).
+La tienda de animales PETGOO se dedica a la comercialización de productos de alimentación, accesorios y productos de higiene para mascotas, incluyendo además servicios de transporte y envío a domicilio.
+
+Actualmente, la gestión del inventario, concertación e historial de citas, las ventas y los pedidos se realizan de forma parcial mediante herramientas no centralizadas y hojas de cálculo manuales. Esta situación provoca inconsistencias en el stock, errores administrativos, dificultades para consultar información actualizada y limita la posibilidad de comercializar los productos a través de plataformas digitales.
+
+Con el objetivo de modernizar y expandir el negocio, la empresa ha decidido desarrollar una plataforma web de comercio electrónico y gestión centralizada. El nuevo sistema permitirá integrar en una única aplicación la gestión del catálogo de productos, clientes, empleados, veterinarios, pedidos, ventas, stock y envíos.
+
+Gerencia : requieren centralizar la gestión del catálogo de productos y categorías, consultar el historial global de ventas, supervisar la actividad de los empleados.
+
+Empleados: necesitan procesar  los pedidos realizados tanto de forma online, consultar y actualizar el inventario, mantener el stock disponible actualizado en tiempo real.
+
+Veterinarios: buscan la gestión eficiente de consultas, asignación de diagnósticos y prescripciones necesarios para cada mascota atendida en consulta de manera personalizada.
+
+Clientes: desean consultar el catálogo online, buscar y filtrar productos según diferentes criterios, añadir productos a un carrito de compra, realizar pedidos, seleccionar una dirección de entrega, consultar el estado de sus pedidos, y situación de mascotas y procedimientos necesarios.
+
+El sistema deberá permitir que la información generada durante las distintas operaciones quede centralizada y sea accesible por los usuarios autorizados. De este modo, se pretende reducir la duplicidad de datos y los errores derivados de la gestión manual.
+
+Asimismo, la plataforma permitirá ampliar el canal de ventas de la empresa mediante el comercio electrónico, ofreciendo a los clientes la posibilidad de realizar compras sin necesidad de acudir físicamente al establecimiento. Los empleados podrán gestionar dichos pedidos desde la misma plataforma utilizada para las operaciones realizadas en tienda.
+
+Con la implantación del sistema se espera mejorar el control del inventario, agilizar la gestión de pedidos y ventas y ofrecer una mejor experiencia de compra a los clientes.
+
 
 ## 2. Glosario de términos
 Concertación de citas: proceso mediante el cual se solicita, acuerda y registra una cita veterinaria para una mascota, asignándole una fecha, hora y veterinario correspondiente.

@@ -118,7 +118,7 @@ Como Gerente,
 quiero dar de alta, modificar y dar de baja productos del catálogo, 
 para mantener actualizada la oferta de productos de la tienda.
 
-**Prueba de aceptación**
+#### **Prueba de aceptación**
 - 
 
 #### R.F.02. Gestionar categorías de productos
@@ -126,7 +126,7 @@ Como Gerente,
 quiero gestionar las categorías de los productos,
  para mantener organizado el catálogo de la tienda.
  
- **Prueba de aceptación**
+####  **Prueba de aceptación**
 - 
  
 #### R.F.03. Consultar el catálogo de productos
@@ -134,7 +134,7 @@ Como cliente,
 quiero consultar los productos disponibles en el catálogo, 
 para conocer los artículos que puedo adquirir en la tienda.
 
-**Prueba de aceptación**
+#### **Prueba de aceptación**
 - 
 
 #### R.F.04. Gestionar precios de productos
@@ -142,7 +142,7 @@ Como Gerente,
 quiero modificar los precios de los productos del catálogo, 
 para mantener actualizados los precios de venta de la tienda.
 
-**Prueba de aceptación**
+#### **Prueba de aceptación**
 - 
 
 #### R.F.05. Modificar precios de productos de forma localizada
@@ -150,7 +150,7 @@ Como dependiente,
 quiero modificar el precio de determinados productos, 
 para actualizar los precios que necesiten cambios durante la actividad de la tienda. 
 
-**Prueba de aceptación**
+#### **Prueba de aceptación**
 - 
 
 #### R.F.06. Consultar y actualizar el inventario
@@ -158,7 +158,7 @@ Como dependiente,
  quiero consultar y actualizar el stock de los productos, 
 para mantener controlada la disponibilidad de mercancía de la tienda.
 
-**Prueba de aceptación**
+#### **Prueba de aceptación**
 - 
 
 #### R.F.07. Realizar auditorías de inventario
@@ -166,7 +166,7 @@ Como Gerente,
 quiero realizar auditorías del inventario, 
 para comprobar que las existencias registradas coinciden con las existencias reales de la tienda.
 
-**Prueba de aceptación**
+#### **Prueba de aceptación**
 - 
 
 #### R.F.08. Registrar clientes
@@ -174,7 +174,7 @@ Como dependiente,
 quiero registrar nuevos clientes, 
 para disponer de su información y poder gestionar sus compras y servicios.
 
-**Prueba de aceptación**
+#### **Prueba de aceptación**
 - 
 
 #### R.F.09. Gestionar datos de clientes

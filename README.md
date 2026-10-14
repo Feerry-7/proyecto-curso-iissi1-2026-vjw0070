@@ -48,6 +48,11 @@ Gestión centralizada: organización de la información y las operaciones de la 
 Duplicidad de datos: situación en la que una misma información se encuentra almacenada varias veces, lo que puede provocar inconsistencias o errores.
 
 ## 3. Visión general del sistema
+El sistema consiste en una plataforma web destinada a centralizar la gestión de una tienda de mascotas y a proporcionar un canal de venta online integrado con la actividad del establecimiento físico.
+
+La aplicación permitirá trabajar con la información generada por las diferentes áreas del negocio desde un único sistema. De esta forma, los datos relacionados con productos, categorías, clientes, empleados, pedidos, ventas, inventario y envíos estarán conectados entre sí y podrán ser gestionados de acuerdo con los permisos de cada usuario.
+
+El sistema se plantea como una solución única para dos ámbitos de actividad: la gestión interna de la tienda y la venta online. Las operaciones realizadas en el establecimiento y las realizadas mediante la plataforma web formarán parte del mismo sistema, permitiendo mantener una información común y actualizada
 
 ### 3.1. Requisitos generales
 

@@ -321,9 +321,24 @@ Como gerente, quiero dar de alta y baja usuarios y gestionar sus permisos, para 
 
 #### 4.1.2. Reglas de negocio
 
-##### R.N.01. Título regla negocio
+##### RN-001: Stock no negativo
+El número de unidades en stock de un producto nunca podrá ser menor que cero. 
 
-Descripción de la regla de negocio.
+##### RN-002: Precio mínimo pedido 
+El precio mínimo de pedido para que se tramite debe ser superior a 20 euros. 
+
+##### RN-003: Precios positivos
+El precio unitario de cualquier producto  debe ser estrictamente mayor que 0,00 €. 
+
+##### RN-004: Actualización automática de stock
+Al completar una venta de productos, el stock de cada artículo vendido se decrementará automáticamente según la cantidad comprada.
+
+##### RN-005: Gastos de envío gratuitos por pedido mínimo
+Si el importe total de los productos en el pedido  supera los 70,00 €, los gastos de envío serán gratuitos (0,00 €). De lo contrario, se aplicará una tarifa fija de 4,95 €. 
+
+##### RN-006: Unicidad de correo electrónico y DNI
+No podrán existir dos usuarios con el mismo correo electrónico ni dos empleados con el mismo DNI.
+
 
 ### 4.2. Mapa de historias de usuario (opcional)
 

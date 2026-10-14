@@ -119,7 +119,10 @@ quiero dar de alta, modificar y dar de baja productos del catálogo,
 para mantener actualizada la oferta de productos de la tienda.
 
 #### **Prueba de aceptación**
-- 
+- Se debe comprobar que el gerente pueda dar de alta un producto con sus datos obligatorios.
+- Se debe comprobar que el gerente pueda modificar los datos de un producto existente.
+- Se debe comprobar que el gerente pueda dar de baja un producto del catálogo.
+- Se debe aplicar la regla de negocio RN-003 para comprobar que no se permita registrar un producto con un precio igual o inferior a 0,00 €.
 
 #### R.F.02. Gestionar categorías de productos
 Como Gerente, 

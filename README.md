@@ -485,10 +485,12 @@ para mantener la trazabilidad de la procedencia de los artículos.
 
 
 #### RI-005: Información de pedidos
-Como Gerente y cliente, 
-quiero registrar la información de cada pedido: 
-ID de Pedido (único), Fecha y hora de creación, Cliente asociado, Empleado responsable (si la venta es en tienda), Estado del pedido (Pendiente, En preparación, Enviado, Entregado, Cancelado), Forma de pago (Tarjeta, Efectivo), Dirección de envío, Gastos de envío, Importe total (€) , Líneas de pedido (Producto, Cantidad, Precio unitario y Subtotal) y canal( Online /Presencial) 
-para emitir justificantes de compra y llevar un registro financiero. 
+Como gerente del sistema,
+quiero almacenar la información correspondiente a los pedidos y las compras realizadas en PetGoo, incluyendo:
+Pedido: ID de pedido (único), fecha y hora de creación, cliente asociado, empleado responsable (cuando se trate de una venta presencial), estado del pedido (Pendiente, En preparación, Enviado, Entregado o Cancelado), forma de pago (Tarjeta o Efectivo), canal de compra (Online o Presencial), dirección de envío (cuando corresponda), gastos de envío e importe total (€).
+Líneas de pedido: producto asociado, cantidad adquirida, precio unitario aplicado en el momento de la compra y subtotal de la línea.
+Cada pedido estará asociado a un cliente y contendrá las líneas correspondientes a los productos adquiridos. En las compras presenciales se registrará el empleado responsable, mientras que en los pedidos online se almacenará la dirección de envío cuando sea necesaria.
+para emitir justificantes de compra, mantener un registro de las operaciones comerciales y facilitar el seguimiento de los pedidos y las ventas.
 
 #### **Prueba de aceptación**
 -Comprobar que se puede registrar un pedido con su ID, fecha y hora, cliente asociado, canal de compra, estado, forma de pago e importe total.

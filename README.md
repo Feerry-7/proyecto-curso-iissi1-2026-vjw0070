@@ -650,7 +650,7 @@ El mapa de historias de usuario de PetGoo permite organizar las funcionalidades 
 | **Gestionar entregas** | Guardar direcciones de entrega y gestionar los envíos asociados a pedidos online. |
 | **Gestionar servicios veterinarios** | Registrar mascotas, solicitar y gestionar citas, consultar agendas y registrar consultas veterinarias. |
 | **Supervisar el negocio** | Consultar información de ventas, controlar el inventario y gestionar proveedores y reposiciones. |
-### 4.3. Requisitos no funcionales (opcional)
+### 4.3. Requisitos no funcionales 
 
 **R.N.F. 01. Usabilidad**
 Como usuario del sistema, 

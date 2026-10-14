@@ -427,10 +427,46 @@ El mapa de historias de usuario de PetGoo permite organizar las funcionalidades 
 | **Supervisar el negocio** | Consultar información de ventas, controlar el inventario y gestionar proveedores y reposiciones. |
 ### 4.3. Requisitos no funcionales (opcional)
 
-**R.N.F. 01. Título requisito no funcional**
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
+**R.N.F. 01. Usabilidad**
+Como usuario del sistema, 
+quiero que la plataforma sea sencilla e intuitiva de utilizar, 
+para poder realizar las operaciones correspondientes a mi función sin dificultades.
+
+**R.N.F. 02. Rendimiento**
+Como usuario del sistema, 
+quiero que la búsqueda de catálogo y la confirmación de pedidos respondan en menos de 2 segundos, 
+para asegurar una experiencia fluida y sin interrupciones.
+
+**R.N.F. 03. Disponibilidad**
+Como cliente, 
+quiero que la plataforma esté disponible durante la mayor parte del tiempo, 
+para poder consultar el catálogo y realizar compras cuando lo necesite.
+
+**R.N.F. 04. Seguridad**
+Como usuario del sistema, 
+quiero que el acceso a la plataforma esté protegido mediante autenticación, 
+para evitar que personas no autorizadas puedan acceder a la información del sistema.
+
+**R.N.F. 05. Control de acceso**
+Como Gerente, 
+quiero que cada usuario tenga acceso únicamente a las funciones que correspondan a su rol, 
+para proteger la información y evitar operaciones no autorizadas.
+
+**R.N.F. 06. Fiabilidad**
+Como empleado, 
+quiero que la información registrada en el sistema se mantenga íntegra y consistente, 
+para poder confiar en los datos de productos, inventario, ventas y pedidos.
+
+**R.N.F.07. Compatibilidad**
+Como usuario, 
+quiero poder utilizar la plataforma desde los principales navegadores web y diferentes dispositivos, 
+para poder acceder al sistema independientemente del dispositivo utilizado.
+
+**R.N.F. 08. Mantenibilidad**
+Como responsable del sistema, 
+quiero que la aplicación esté organizada de forma que facilite su mantenimiento y actualización, 
+para poder corregir errores o incorporar mejoras sin afectar innecesariamente al resto del sistema.
+
 
 -- fin entregable 1 --
 

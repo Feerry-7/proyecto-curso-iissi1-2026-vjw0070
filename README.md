@@ -283,10 +283,10 @@ quiero consultar mis pedidos y compras realizadas,
 para conocer el estado y el historial de mis operaciones con la tienda.
 
 #### **Prueba de aceptación**
--Se debe comprobar que el cliente pueda consultar sus pedidos online.
--Se debe comprobar que pueda consultar el estado de cada pedido.
--Se debe comprobar que pueda consultar el historial de sus compras.
--Se debe comprobar que no pueda acceder a los pedidos o compras de otros clientes.
+- Se debe comprobar que el cliente pueda consultar sus pedidos online.
+- Se debe comprobar que pueda consultar el estado de cada pedido.
+- Se debe comprobar que pueda consultar el historial de sus compras.
+- Se debe comprobar que no pueda acceder a los pedidos o compras de otros clientes.
 
 
 
@@ -297,7 +297,10 @@ quiero gestionar los pedidos realizados mediante la plataforma web,
 para preparar y controlar las compras realizadas por los clientes.
 
 #### **Prueba de aceptación**
--
+- Se debe comprobar que el dependiente pueda consultar los pedidos online registrados.
+- Se debe comprobar que pueda consultar los productos y las cantidades de cada pedido.
+- Se debe comprobar que pueda actualizar el estado del pedido durante su preparación.
+- Se debe aplicar la regla de negocio RN-001 para garantizar que la gestión de los pedidos no provoque que el stock sea negativo.
 
 
 
@@ -307,7 +310,10 @@ quiero consultar las citas q tengo asignadas
 para organizar mi jornada de trabajo.
 
 #### **Prueba de aceptación**
--
+- Se debe comprobar que el veterinario pueda consultar las citas que tiene asignadas.
+- Se debe comprobar que las citas aparezcan en las fechas y horarios correspondientes.
+- Se debe comprobar que se muestre la información necesaria para identificar cada cita y la mascota.
+- Se debe comprobar que los cambios realizados en las citas se reflejen correctamente en la agenda.
 
 
 
@@ -317,7 +323,10 @@ quiero crear la consulta correspondiente a una cita atendida y registrar observa
 para mantener el historial clínico.
 
 #### **Prueba de aceptación**
--
+- Se debe comprobar que el veterinario pueda registrar una consulta asociada a una cita atendida.
+- Se debe comprobar que pueda introducir observaciones clínicas.
+- Se debe comprobar que la consulta quede asociada a la mascota correspondiente.
+- Se debe comprobar que la información registrada pueda consultarse posteriormente en el historial clínico.
 
 
 #### RF-19. Consultar historial de una mascota
@@ -326,7 +335,10 @@ quiero consultar citas, y consultas según los permisos del perfil,
 para disponer de la información relevante de la mascota.
 
 #### **Prueba de aceptación**
--
+- Se debe comprobar que el veterinario pueda consultar el historial clínico de las mascotas autorizadas.
+- Se debe comprobar que el cliente pueda consultar la información veterinaria de sus propias mascotas que tenga permitida.
+- Se debe comprobar que el historial muestre las citas y consultas registradas.
+- Se debe comprobar que el cliente no pueda acceder al historial de mascotas pertenecientes a otros clientes.
 
 #### R.F.20. Gestionar envíos
 Como dependiente, 
@@ -334,7 +346,10 @@ quiero gestionar los envíos asociados a los pedidos online,
 para controlar la entrega de los productos a los clientes.
 
 #### **Prueba de aceptación**
--
+- Se debe comprobar que el dependiente pueda consultar los envíos asociados a los pedidos online.
+- Se debe comprobar que pueda registrar o modificar los datos del envío.
+- Se debe comprobar que pueda actualizar el estado del envío.
+- Se debe comprobar que cada envío quede asociado al pedido correspondiente.
 
 
 #### R.F.21. Cancelar pedidos online
@@ -343,7 +358,10 @@ quiero cancelar mis pedidos online cuando sea posible,
 para poder anular una compra que ya no deseo realizar.
 
 #### **Prueba de aceptación**
--
+- Se debe comprobar que el cliente pueda consultar sus pedidos para seleccionar el que desea cancelar.
+- Se debe comprobar que pueda cancelar un pedido cuando cumpla las condiciones establecidas.
+- Se debe comprobar que el sistema actualice el estado del pedido tras aceptar la cancelación.
+- Se debe comprobar que el sistema impida cancelar un pedido cuando ya no sea posible hacerlo según las condiciones del negocio.
 
 
 
@@ -351,7 +369,12 @@ para poder anular una compra que ya no deseo realizar.
 Como gerente, quiero dar de alta y baja usuarios y gestionar sus permisos, para controlar el acceso a las diferentes funciones del sistema según sus responsabilidades.
 
 #### **Prueba de aceptación**
--
+- Se debe comprobar que el gerente pueda dar de alta un usuario y asignarle un perfil.
+- Se debe comprobar que pueda modificar los permisos de un usuario.
+- Se debe comprobar que pueda dar de baja a un usuario.
+- Se debe comprobar que cada usuario solo pueda acceder a las funciones autorizadas para su perfil.
+- Se debe aplicar la regla de negocio RN-006 para impedir que dos usuarios tengan el mismo correo electrónico.
+- Se debe aplicar la regla de negocio RN-006 para impedir que dos empleados tengan el mismo DNI.
 
 
 
@@ -388,7 +411,7 @@ Si el importe total de los productos en el pedido  supera los 70,00 €, los gas
 No podrán existir dos usuarios con el mismo correo electrónico ni dos empleados con el mismo DNI.
 
 
-### 4.2. Mapa de historias de usuario (opcional)
+
 ### 4.2. Mapa de historias de usuario
 
 El mapa de historias de usuario de PetGoo permite organizar las funcionalidades del sistema según las actividades principales que realizan los distintos tipos de usuarios. Se estructura en actividades generales y tareas más específicas, facilitando la comprensión del alcance del sistema y la relación entre las necesidades de los usuarios y los requisitos funcionales definidos.

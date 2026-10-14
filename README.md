@@ -183,7 +183,125 @@ quiero consultar y modificar la información de los clientes,
 para mantener sus datos actualizados.
 
 #### **Prueba de aceptación**
-- 
+-
+
+
+#### R.F.10. Registro y autenticación de usuarios
+Como cliente, 
+quiero crear una cuenta en la plataforma e iniciar sesión,
+para gestionar mis datos personales, direcciones y realizar pedidos online.
+
+#### **Prueba de aceptación**
+-
+
+
+#### RF-11. Gestionar direcciones de entrega
+Como Cliente, 
+quiero añadir, modificar y seleccionar direcciones de entrega, 
+para agilizar la confirmación de pedidos online.
+
+#### **Prueba de aceptación**
+-
+
+
+#### R.F.12. Tramitación de pedidos online (Carrito de compra)
+Como cliente, 
+quiero añadir productos al carrito, seleccionar dirección de envío y método de pago para realizar el pedido, 
+para comprar los productos desde la plataforma web.
+
+#### **Prueba de aceptación**
+-
+
+
+#### R.F.13. Consulta de historial de ventas y reportes
+Como Gerente, 
+quiero consultar el historial de ventas filtrado por fechas, cliente o empleado, 
+para analizar los ingresos e impacto comercial.
+
+#### **Prueba de aceptación**
+-
+
+
+#### RF-14. Gestionar citas veterinarias
+Como cliente , 
+quiero  solicitar, confirmar o cancelar citas , 
+para organizar la agenda de atención veterinaria.
+
+#### **Prueba de aceptación**
+-
+
+
+#### R.F.15. Consultar pedidos y ventas del cliente
+Como cliente, 
+quiero consultar mis pedidos y compras realizadas, 
+para conocer el estado y el historial de mis operaciones con la tienda.
+
+#### **Prueba de aceptación**
+-
+
+
+#### R.F.16. Gestionar pedidos online
+Como dependiente, 
+quiero gestionar los pedidos realizados mediante la plataforma web, 
+para preparar y controlar las compras realizadas por los clientes.
+
+#### **Prueba de aceptación**
+-
+
+
+
+#### R.F.17. Consultar agenda 
+Como veterinario
+quiero consultar las citas q tengo asignadas
+para organizar mi jornada de trabajo.
+
+#### **Prueba de aceptación**
+-
+
+
+
+#### RF-18. Registrar consulta clínica
+Como Veterinario, 
+quiero crear la consulta correspondiente a una cita atendida y registrar observaciones, 
+para mantener el historial clínico.
+
+#### **Prueba de aceptación**
+-
+
+
+#### RF-19. Consultar historial de una mascota
+Como Cliente o veterinario , 
+quiero consultar citas, y consultas según los permisos del perfil, 
+para disponer de la información relevante de la mascota.
+
+#### **Prueba de aceptación**
+-
+
+#### R.F.20. Gestionar envíos
+Como dependiente, 
+quiero gestionar los envíos asociados a los pedidos online, 
+para controlar la entrega de los productos a los clientes.
+
+#### **Prueba de aceptación**
+-
+
+
+#### R.F.21. Cancelar pedidos online
+Como cliente, 
+quiero cancelar mis pedidos online cuando sea posible, 
+para poder anular una compra que ya no deseo realizar.
+
+#### **Prueba de aceptación**
+-
+
+
+
+#### R.F.22. Gestionar usuarios y permisos
+Como gerente, quiero dar de alta y baja usuarios y gestionar sus permisos, para controlar el acceso a las diferentes funciones del sistema según sus responsabilidades.
+
+#### **Prueba de aceptación**
+-
+
 
 
 

@@ -127,13 +127,13 @@ para mantener actualizada la oferta de productos de la tienda.
 #### R.F.02. Gestionar categorías de productos
 Como Gerente, 
 quiero gestionar las categorías de los productos,
- para mantener organizado el catálogo de la tienda.
+para mantener organizado el catálogo de la tienda.
  
 ####  **Prueba de aceptación**
 - Se debe comprobar que el gerente pueda crear una nueva categoría.
--Se debe comprobar que el gerente pueda modificar una categoría existente.
--Se debe comprobar que el gerente pueda asociar productos a las categorías correspondientes.
--Se debe comprobar que los cambios realizados en las categorías queden guardados correctamente.
+- Se debe comprobar que el gerente pueda modificar una categoría existente.
+- Se debe comprobar que el gerente pueda asociar productos a las categorías correspondientes.
+- Se debe comprobar que los cambios realizados en las categorías queden guardados correctamente.
  
 #### R.F.03. Consultar el catálogo de productos
 Como cliente, 
@@ -141,10 +141,10 @@ quiero consultar los productos disponibles en el catálogo,
 para conocer los artículos que puedo adquirir en la tienda.
 
 #### **Prueba de aceptación**
--Se debe comprobar que el cliente pueda consultar los productos disponibles en el catálogo.
--Se debe comprobar que cada producto muestre su información relevante, incluido el nombre y el precio.
--Se debe comprobar que los productos aparezcan organizados por categorías.
--Se debe comprobar que los precios mostrados coincidan con los registrados en el sistem
+- Se debe comprobar que el cliente pueda consultar los productos disponibles en el catálogo.
+- Se debe comprobar que cada producto muestre su información relevante, incluido el nombre y el precio.
+- Se debe comprobar que los productos aparezcan organizados por categorías.
+- Se debe comprobar que los precios mostrados coincidan con los registrados en el sistem
 
 #### R.F.04. Gestionar precios de productos
 Como Gerente, 
@@ -152,10 +152,10 @@ quiero modificar los precios de los productos del catálogo,
 para mantener actualizados los precios de venta de la tienda.
 
 #### **Prueba de aceptación**
--Se debe comprobar que el gerente pueda modificar el precio de un producto existente.
--Se debe comprobar que el nuevo precio quede guardado correctamente.
--Se debe comprobar que el precio actualizado se muestre en el catálogo.
--Se debe aplicar la regla de negocio RN-003 para impedir que se establezcan precios iguales o inferiores a 0,00 €.
+- Se debe comprobar que el gerente pueda modificar el precio de un producto existente.
+- Se debe comprobar que el nuevo precio quede guardado correctamente.
+- Se debe comprobar que el precio actualizado se muestre en el catálogo.
+- Se debe aplicar la regla de negocio RN-003 para impedir que se establezcan precios iguales o inferiores a 0,00 €.
 
 #### R.F.05. Modificar precios de productos de forma localizada
 Como dependiente, 
@@ -164,20 +164,20 @@ para actualizar los precios que necesiten cambios durante la actividad de la tie
 
 #### **Prueba de aceptación**
 - Se debe comprobar que el dependiente pueda modificar el precio de un producto dentro de sus permisos.
--Se debe comprobar que el nuevo precio quede guardado correctamente.
--Se debe comprobar que el dependiente no pueda modificar precios de productos para los que no tenga autorización.
--Se debe aplicar la regla de negocio RN-003 para impedir que se establezcan precios iguales o inferiores a 0,00 €.
+- Se debe comprobar que el nuevo precio quede guardado correctamente.
+- Se debe comprobar que el dependiente no pueda modificar precios de productos para los que no tenga autorización.
+- Se debe aplicar la regla de negocio RN-003 para impedir que se establezcan precios iguales o inferiores a 0,00 €.
 
 #### R.F.06. Consultar y actualizar el inventario
 Como dependiente,
- quiero consultar y actualizar el stock de los productos, 
+quiero consultar y actualizar el stock de los productos, 
 para mantener controlada la disponibilidad de mercancía de la tienda.
 
 #### **Prueba de aceptación**
 - Se debe comprobar que el dependiente pueda consultar el stock disponible de un producto.
--Se debe comprobar que pueda actualizar las existencias según sus permisos.
--Se debe comprobar que el sistema refleje correctamente las cantidades actualizadas.
--Se debe aplicar la regla de negocio RN-001 para impedir que el stock de un producto sea inferior a cero.
+- Se debe comprobar que pueda actualizar las existencias según sus permisos.
+- Se debe comprobar que el sistema refleje correctamente las cantidades actualizadas.
+- Se debe aplicar la regla de negocio RN-001 para impedir que el stock de un producto sea inferior a cero.
 
 #### R.F.07. Realizar auditorías de inventario
 Como Gerente,
@@ -186,9 +186,9 @@ para comprobar que las existencias registradas coinciden con las existencias rea
 
 #### **Prueba de aceptación**
 - Se debe comprobar que el gerente pueda consultar las existencias registradas.
--Se debe comprobar que pueda registrar los resultados de un recuento físico.
--Se debe comprobar que se puedan identificar las diferencias entre el stock real y el registrado.
--Se debe aplicar la regla de negocio RN-001 para garantizar que el stock registrado nunca sea negativo.
+- Se debe comprobar que pueda registrar los resultados de un recuento físico.
+- Se debe comprobar que se puedan identificar las diferencias entre el stock real y el registrado.
+- Se debe aplicar la regla de negocio RN-001 para garantizar que el stock registrado nunca sea negativo.
 
 #### R.F.08. Registrar clientes
 Como dependiente, 
@@ -197,9 +197,9 @@ para disponer de su información y poder gestionar sus compras y servicios.
 
 #### **Prueba de aceptación**
 - Se debe comprobar que el dependiente pueda registrar un nuevo cliente con los datos obligatorios.
--Se debe comprobar que los datos del cliente queden almacenados correctamente.
--Se debe comprobar que el cliente registrado pueda localizarse posteriormente.
--Se debe aplicar la regla de negocio RN-006 para impedir que dos usuarios tengan el mismo correo electrónico.
+- Se debe comprobar que los datos del cliente queden almacenados correctamente.
+- Se debe comprobar que el cliente registrado pueda localizarse posteriormente.
+- Se debe aplicar la regla de negocio RN-006 para impedir que dos usuarios tengan el mismo correo electrónico.
 
 #### R.F.09. Gestionar datos de clientes
 Como Gerente, 
@@ -207,11 +207,10 @@ quiero consultar y modificar la información de los clientes,
 para mantener sus datos actualizados.
 
 #### **Prueba de aceptación**
--Prueba de aceptación
--Se debe comprobar que el gerente pueda consultar los datos de un cliente registrado.
--Se debe comprobar que pueda modificar los datos permitidos.
--Se debe comprobar que los cambios queden guardados correctamente.
--Se debe aplicar la regla de negocio RN-006 para impedir que se registre un correo electrónico que ya pertenezca a otro usuario.
+- Se debe comprobar que el gerente pueda consultar los datos de un cliente registrado.
+- Se debe comprobar que pueda modificar los datos permitidos.
+- Se debe comprobar que los cambios queden guardados correctamente.
+- Se debe aplicar la regla de negocio RN-006 para impedir que se registre un correo electrónico que ya pertenezca a otro usuario.
 
 
 #### R.F.10. Registro y autenticación de usuarios
@@ -220,10 +219,10 @@ quiero crear una cuenta en la plataforma e iniciar sesión,
 para gestionar mis datos personales, direcciones y realizar pedidos online.
 
 #### **Prueba de aceptación**
--Se debe comprobar que un cliente pueda crear una cuenta proporcionando los datos obligatorios.
--Se debe comprobar que un usuario registrado pueda iniciar sesión con sus credenciales correctas.
--Se debe comprobar que el sistema rechace el inicio de sesión cuando las credenciales sean incorrectas.
--Se debe aplicar la regla de negocio RN-006 para impedir que dos usuarios tengan el mismo correo electrónico.
+- Se debe comprobar que un cliente pueda crear una cuenta proporcionando los datos obligatorios.
+- Se debe comprobar que un usuario registrado pueda iniciar sesión con sus credenciales correctas.
+- Se debe comprobar que el sistema rechace el inicio de sesión cuando las credenciales sean incorrectas.
+- Se debe aplicar la regla de negocio RN-006 para impedir que dos usuarios tengan el mismo correo electrónico.
 
 
 #### RF-11. Gestionar direcciones de entrega
@@ -232,10 +231,10 @@ quiero añadir, modificar y seleccionar direcciones de entrega,
 para agilizar la confirmación de pedidos online.
 
 #### **Prueba de aceptación**
--Se debe comprobar que el cliente pueda añadir una nueva dirección de entrega.
--Se debe comprobar que pueda modificar una dirección previamente registrada.
--Se debe comprobar que pueda seleccionar una de sus direcciones al tramitar un pedido.
--Se debe comprobar que un cliente no pueda modificar ni consultar las direcciones privadas de otro cliente.
+- Se debe comprobar que el cliente pueda añadir una nueva dirección de entrega.
+- Se debe comprobar que pueda modificar una dirección previamente registrada.
+- Se debe comprobar que pueda seleccionar una de sus direcciones al tramitar un pedido.
+- Se debe comprobar que un cliente no pueda modificar ni consultar las direcciones privadas de otro cliente.
 
 
 #### R.F.12. Tramitación de pedidos online (Carrito de compra)
@@ -244,12 +243,12 @@ quiero añadir productos al carrito, seleccionar dirección de envío y método 
 para comprar los productos desde la plataforma web.
 
 #### **Prueba de aceptación**
--Se debe comprobar que el cliente pueda añadir productos al carrito y modificar las cantidades.
--Se debe comprobar que el sistema calcule correctamente el importe de los productos seleccionados.
--Se debe comprobar que el sistema aplique los gastos de envío correspondientes: 0,00 € si el importe de los productos supera los 70,00 €, y 4,95 € en caso contrario.
--Se debe aplicar la regla de negocio RN-002 para impedir que se tramite un pedido cuyo importe no sea superior a 20,00 €.
--Se debe aplicar la regla de negocio RN-003 para garantizar que los productos tengan precios positivos.
--Se debe aplicar la regla de negocio RN-001 para impedir que el stock resulte negativo al tramitar el pedido.
+- Se debe comprobar que el cliente pueda añadir productos al carrito y modificar las cantidades.
+- Se debe comprobar que el sistema calcule correctamente el importe de los productos seleccionados.
+- Se debe comprobar que el sistema aplique los gastos de envío correspondientes: 0,00 € si el importe de los productos supera los 70,00 €, y 4,95 € en caso contrario.
+- Se debe aplicar la regla de negocio RN-002 para impedir que se tramite un pedido cuyo importe no sea superior a 20,00 €.
+- Se debe aplicar la regla de negocio RN-003 para garantizar que los productos tengan precios positivos.
+- Se debe aplicar la regla de negocio RN-001 para impedir que el stock resulte negativo al tramitar el pedido.
 
 
 #### R.F.13. Consulta de historial de ventas y reportes
@@ -258,10 +257,10 @@ quiero consultar el historial de ventas filtrado por fechas, cliente o empleado,
 para analizar los ingresos e impacto comercial.
 
 #### **Prueba de aceptación**
--Se debe comprobar que el gerente pueda consultar el historial de ventas.
--Se debe comprobar que pueda filtrar las ventas por fecha, cliente o empleado.
--Se debe comprobar que los resultados coincidan con las ventas registradas según los filtros seleccionados.
--Se debe comprobar que los importes mostrados correspondan con los datos almacenados en el sistema.
+- Se debe comprobar que el gerente pueda consultar el historial de ventas.
+- Se debe comprobar que pueda filtrar las ventas por fecha, cliente o empleado.
+- Se debe comprobar que los resultados coincidan con las ventas registradas según los filtros seleccionados.
+- Se debe comprobar que los importes mostrados correspondan con los datos almacenados en el sistema.
 
 
 
@@ -272,10 +271,10 @@ quiero  solicitar, confirmar o cancelar citas ,
 para organizar la agenda de atención veterinaria.
 
 #### **Prueba de aceptación**
--Se debe comprobar que el cliente pueda consultar los horarios disponibles para solicitar una cita.
--Se debe comprobar que pueda solicitar una cita para una de sus mascotas.
--Se debe comprobar que pueda cancelar una cita cuando corresponda.
--Se debe comprobar que las citas creadas o canceladas se reflejen correctamente en la agenda veterinaria.
+- Se debe comprobar que el cliente pueda consultar los horarios disponibles para solicitar una cita.
+- Se debe comprobar que pueda solicitar una cita para una de sus mascotas.
+- Se debe comprobar que pueda cancelar una cita cuando corresponda.
+- Se debe comprobar que las citas creadas o canceladas se reflejen correctamente en la agenda veterinaria.
 
 
 #### R.F.15. Consultar pedidos y ventas del cliente

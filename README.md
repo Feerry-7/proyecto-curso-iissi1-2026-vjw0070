@@ -117,6 +117,7 @@ Es el usuario final que va a consumir los servicios que proporciona nuestro nego
 Como Gerente, 
 quiero dar de alta, modificar y dar de baja productos del catálogo, 
 para mantener actualizada la oferta de productos de la tienda.
+
 **Prueba de aceptación**
 - 
 
@@ -124,6 +125,7 @@ para mantener actualizada la oferta de productos de la tienda.
 Como Gerente, 
 quiero gestionar las categorías de los productos,
  para mantener organizado el catálogo de la tienda.
+ 
  **Prueba de aceptación**
 - 
  
@@ -131,6 +133,7 @@ quiero gestionar las categorías de los productos,
 Como cliente, 
 quiero consultar los productos disponibles en el catálogo, 
 para conocer los artículos que puedo adquirir en la tienda.
+
 **Prueba de aceptación**
 - 
 
@@ -138,34 +141,39 @@ para conocer los artículos que puedo adquirir en la tienda.
 Como Gerente, 
 quiero modificar los precios de los productos del catálogo, 
 para mantener actualizados los precios de venta de la tienda.
+
 **Prueba de aceptación**
 - 
 
-####R.F.05. Modificar precios de productos de forma localizada
+#### R.F.05. Modificar precios de productos de forma localizada
 Como dependiente, 
 quiero modificar el precio de determinados productos, 
 para actualizar los precios que necesiten cambios durante la actividad de la tienda. 
+
 **Prueba de aceptación**
 - 
 
-R.F.06. Consultar y actualizar el inventario
+#### R.F.06. Consultar y actualizar el inventario
 Como dependiente,
  quiero consultar y actualizar el stock de los productos, 
 para mantener controlada la disponibilidad de mercancía de la tienda.
+
 **Prueba de aceptación**
 - 
 
-R.F.07. Realizar auditorías de inventario
+####R.F.07. Realizar auditorías de inventario
 Como Gerente,
 quiero realizar auditorías del inventario, 
 para comprobar que las existencias registradas coinciden con las existencias reales de la tienda.
+
 **Prueba de aceptación**
 - 
 
-R.F.08. Registrar clientes
+####R.F.08. Registrar clientes
 Como dependiente, 
 quiero registrar nuevos clientes, 
 para disponer de su información y poder gestionar sus compras y servicios.
+
 **Prueba de aceptación**
 - 
 
@@ -173,17 +181,14 @@ para disponer de su información y poder gestionar sus compras y servicios.
 Como Gerente, 
 quiero consultar y modificar la información de los clientes, 
 para mantener sus datos actualizados.
+
 **Prueba de aceptación**
 - 
 
 
 
 
-**Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
-- Se debe aplicar la regla de negocio R.N.XX.
-- ...
+
 
 #### 4.1.1. Requisitos de información
 

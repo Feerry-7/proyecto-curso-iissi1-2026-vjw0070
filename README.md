@@ -113,20 +113,6 @@ Es el usuario final que va a consumir los servicios que proporciona nuestro nego
 
 ### 4.1. Requisitos funcionales
 
-#### R.F.01. Título requisito funcional
-
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
-
-**Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
-- Se debe aplicar la regla de negocio R.N.XX.
-- ...
-
-#### 4.1.1. Requisitos de información
-
 ####R.F.01. Gestionar productos del catálogo
 Como Gerente, 
 quiero dar de alta, modificar y dar de baja productos del catálogo, 
@@ -189,6 +175,18 @@ quiero consultar y modificar la información de los clientes,
 para mantener sus datos actualizados.
 **Prueba de aceptación**
 - 
+
+
+
+
+**Prueba de aceptación**
+- Descripción de la primera comprobación a realizar
+- Descripción de la segunda comprobación a realizar
+- Se debe aplicar la regla de negocio R.N.XX.
+- ...
+
+#### 4.1.1. Requisitos de información
+
 
 **Prueba de aceptación**
 - Descripción de la primera comprobación a realizar

@@ -113,35 +113,35 @@ Es el usuario final que va a consumir los servicios que proporciona nuestro nego
 
 ### 4.1. Requisitos funcionales
 
-R.F.01. Gestionar productos del catálogo
+#### R.F.01. Gestionar productos del catálogo
 Como Gerente, 
 quiero dar de alta, modificar y dar de baja productos del catálogo, 
 para mantener actualizada la oferta de productos de la tienda.
 **Prueba de aceptación**
 - 
 
-R.F.02. Gestionar categorías de productos
+#### R.F.02. Gestionar categorías de productos
 Como Gerente, 
 quiero gestionar las categorías de los productos,
  para mantener organizado el catálogo de la tienda.
  **Prueba de aceptación**
 - 
  
-R.F.03. Consultar el catálogo de productos
+#### R.F.03. Consultar el catálogo de productos
 Como cliente, 
 quiero consultar los productos disponibles en el catálogo, 
 para conocer los artículos que puedo adquirir en la tienda.
 **Prueba de aceptación**
 - 
 
-R.F.04. Gestionar precios de productos
+#### R.F.04. Gestionar precios de productos
 Como Gerente, 
 quiero modificar los precios de los productos del catálogo, 
 para mantener actualizados los precios de venta de la tienda.
 **Prueba de aceptación**
 - 
 
-R.F.05. Modificar precios de productos de forma localizada
+####R.F.05. Modificar precios de productos de forma localizada
 Como dependiente, 
 quiero modificar el precio de determinados productos, 
 para actualizar los precios que necesiten cambios durante la actividad de la tienda. 
@@ -169,7 +169,7 @@ para disponer de su información y poder gestionar sus compras y servicios.
 **Prueba de aceptación**
 - 
 
-R.F.09. Gestionar datos de clientes
+#### R.F.09. Gestionar datos de clientes
 Como Gerente, 
 quiero consultar y modificar la información de los clientes, 
 para mantener sus datos actualizados.

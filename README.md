@@ -87,7 +87,23 @@ quiero gestionar la información de las mascotas y sus citas veterinarias,
 para poder realizar y mantener actualizada la atención veterinaria ofrecida a los clientes.
 
 ### 3.2. Usuarios del sistema
+Para garantizar la seguridad y el correcto flujo de trabajo, el sistema contempla diferentes perfiles de usuarios. Cada usuario tendrá permisos específicos adaptados a sus responsabilidades dentro del negocio:
 
+Gerente
+Es el usuario con control total sobre el sistema, cumpliendo con el rol de dueño de negocio.
+-Capacidades: puede dar de alta y baja a otros usuarios de cualquier jerarquía, acceder a los informes de beneficios, ajustar precios del catálogo de forma masiva, realizar auditorías de inventario además de comunicarlo a proveedores, y modificar configuraciones críticas.
+
+Dependiente (Empleado)
+Aquel situado en el mostrador principal de recepción. Su principal labor es comercial y de atención al cliente.
+-Capacidades:  posibilidad de registrar nuevos clientes y mascotas, administrar ventas, cobrar, y gestionar la agenda (pudiendo conceder/cancelar citas o concertándolas en línea o presencialmente). Por jerarquía, no es capaz ni de alterar ni leer partes confidenciales del historial clínico, pero si de modificar precios de forma localizada.
+
+Veterinario
+El profesional de salud animal cualificado para atender en consultas.
+-Capacidades: gestionar su agenda de citas diarias (sincronizada con las de recepción), acceder al historial clínico completo de las mascotas, registrar nuevos diagnósticos, recetar medicamentos y registrar los servicios realizados para que el dependiente pueda cobrarlos. 
+
+Cliente
+Es el usuario final que va a consumir los servicios que proporciona nuestro negocio.
+-Capacidades: a través de la página web podrá consultar las próximas citas de sus mascotas, ver su historial y calendario de vacunaciones (pudiendo comprobar las vacunas que son obligatorias por la legislación vigente de la comunidad autónoma en cada especie) , solicitar o cancelar citas online de forma sencilla. Encontrar productos recomendados según recomendaciones del veterinario o relacionados con especie y raza en particular, crear o cancelar pedidos y filtrar tanto en productos como en pedidos.
 ## 4. Catálogo de requisitos
 
 ### 4.1. Requisitos funcionales

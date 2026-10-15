@@ -15,14 +15,6 @@ Actualmente, la gestión del inventario, concertación e historial de citas, las
 
 Con el objetivo de modernizar y expandir el negocio, la empresa ha decidido desarrollar una plataforma web de comercio electrónico y gestión centralizada. El nuevo sistema permitirá integrar en una única aplicación la gestión del catálogo de productos, clientes, empleados, veterinarios, pedidos, ventas, stock y envíos.
 
-Gerencia : requieren centralizar la gestión del catálogo de productos y categorías, consultar el historial global de ventas, supervisar la actividad de los empleados.
-
-Empleados: necesitan procesar  los pedidos realizados tanto de forma online, consultar y actualizar el inventario, mantener el stock disponible actualizado en tiempo real.
-
-Veterinarios: buscan la gestión eficiente de consultas, asignación de diagnósticos y prescripciones necesarios para cada mascota atendida en consulta de manera personalizada.
-
-Clientes: desean consultar el catálogo online, buscar y filtrar productos según diferentes criterios, añadir productos a un carrito de compra, realizar pedidos, seleccionar una dirección de entrega, consultar el estado de sus pedidos, y situación de mascotas y procedimientos necesarios.
-
 El sistema deberá permitir que la información generada durante las distintas operaciones quede centralizada y sea accesible por los usuarios autorizados. De este modo, se pretende reducir la duplicidad de datos y los errores derivados de la gestión manual.
 
 Asimismo, la plataforma permitirá ampliar el canal de ventas de la empresa mediante el comercio electrónico, ofreciendo a los clientes la posibilidad de realizar compras sin necesidad de acudir físicamente al establecimiento. Los empleados podrán gestionar dichos pedidos desde la misma plataforma utilizada para las operaciones realizadas en tienda.
@@ -53,21 +45,7 @@ flowchart TB
 
 
 ## 2. Glosario de términos
-Concertación de citas: proceso mediante el cual se solicita, acuerda y registra una cita veterinaria para una mascota, asignándole una fecha, hora y veterinario correspondiente.
-
-Estado de pedido: situación actual de un pedido durante su procesamiento, por ejemplo pendiente, preparado, enviado, entregado o cancelado.
-
-Inventario:  conjunto de productos disponibles en la tienda y las cantidades existentes de cada uno de ellos.
-
-Reposición: incorporación de nuevas unidades de un producto al inventario para recuperar su disponibilidad.
-
-Stock: cantidad disponible de un determinado producto en un momento concreto.
-
-Comercio electrónico: actividad de compra y venta de productos realizada a través de Internet.
-
-Gestión centralizada: organización de la información y las operaciones de la tienda mediante un único sistema, evitando utilizar herramientas independientes.
-
-Duplicidad de datos: situación en la que una misma información se encuentra almacenada varias veces, lo que puede provocar inconsistencias o errores.
+No hay ningún término de difícil entendimiento.
 
 ## 3. Visión general del sistema
 El sistema consiste en una plataforma web destinada a centralizar la gestión de una tienda de mascotas y a proporcionar un canal de venta online integrado con la actividad del establecimiento físico.

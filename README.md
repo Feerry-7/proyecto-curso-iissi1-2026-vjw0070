@@ -481,7 +481,7 @@ Como empleado,
 quiero almacenar la información de los productos y sus categorías: 
 Producto: ID de Producto (único), Nombre, Descripción, Precio (€), Stock (unidades) y Foto.
 Categoría: ID de Categoría (único), Nombre y Descripción. 
-Cada producto estará asociado a una categoría y podrá ser suministrado por uno o varios proveedores,
+Cada producto estará asociado a una categoría ,
 para organizar el catálogo de productos y mantener actualizada la información del inventario.
 
 #### **Prueba de aceptación**

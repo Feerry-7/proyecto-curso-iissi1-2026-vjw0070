@@ -79,38 +79,59 @@ El sistema se plantea como una solución única para dos ámbitos de actividad: 
 ### 3.1. Requisitos generales
 
 RG-1. Gestionar el inventario
+
 Como empleado, 
+
 quiero gestionar el inventario de productos, 
+
 para conocer y mantener actualizada la disponibilidad de mercancía de la tienda.
 
 RG-2. Gestionar las ventas y los pedidos
+
 Como empleado, 
+
 quiero gestionar las ventas y los pedidos de la tienda, 
+
 para controlar las operaciones de compra realizadas tanto de forma presencial como online.
 
 RG-3. Facilitar la venta online
+
 Como cliente, 
+
 quiero realizar compras a través de la plataforma web, 
+
 para adquirir productos de la tienda sin necesidad de acudir físicamente al establecimiento.
 
 RG-4. Gestionar los envíos
+
 Como empleado, 
+
 quiero gestionar los envíos asociados a los pedidos online, 
+
 para controlar la entrega de los productos a los clientes.
 
 RG-5. Supervisar la actividad del negocio 
+
 Como Gerente, 
+
 quiero consultar la información general de las operaciones de la tienda, gestionar el catálogo de productos de la tienda, 
+
 para supervisar las ventas, los pedidos y el inventario y facilitar la gestión del negocio.
 
-RG-6. Gestionar el acceso al sistema y datos de clientes l
+RG-6. Gestionar el acceso al sistema y datos de clientes 
+
 Como Gerente, 
+
 quiero gestionar los permisos de acceso de los usuarios,gestionar la información de los clientes,
+
 para garantizar que cada usuario pueda acceder únicamente a las funciones que correspondan a su función dentro de la tienda ,disponer de los datos necesarios para administrar sus compras y pedidos.
 
 RG-7. Gestionar servicios veterinarios
+
 Como veterinario,
+
 quiero gestionar la información de las mascotas y sus citas veterinarias,
+
 para poder realizar y mantener actualizada la atención veterinaria ofrecida a los clientes.
 
 ### 3.2. Usuarios del sistema

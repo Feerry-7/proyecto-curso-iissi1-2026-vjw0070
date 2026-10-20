@@ -64,7 +64,7 @@ quiero gestionar el inventario de productos,
 
 para conocer y mantener actualizada la disponibilidad de mercancía de la tienda.
 
-RG-2. Gestionar las ventas y los pedidos
+RG-2. Gestionar las ventas y los pedidos ( pedidos va en otro RG )
 
 Como empleado, 
 
@@ -72,7 +72,7 @@ quiero gestionar las ventas y los pedidos de la tienda,
 
 para controlar las operaciones de compra realizadas tanto de forma presencial como online.
 
-RG-3. Facilitar la venta online
+RG-3. Facilitar la venta online ( Este hay que quitarlo )
 
 Como cliente, 
 
@@ -88,7 +88,7 @@ quiero gestionar los envíos asociados a los pedidos online,
 
 para controlar la entrega de los productos a los clientes.
 
-RG-5. Supervisar la actividad del negocio 
+RG-5. Supervisar la actividad del negocio ( Este tmb quitarlo )
 
 Como Gerente, 
 
@@ -96,7 +96,7 @@ quiero consultar la información general de las operaciones de la tienda, gestio
 
 para supervisar las ventas, los pedidos y el inventario y facilitar la gestión del negocio.
 
-RG-6. Gestionar el acceso al sistema y datos de clientes 
+RG-6. Gestionar el acceso al sistema y datos de clientes (Este tmb )
 
 Como Gerente, 
 

@@ -58,7 +58,7 @@ El sistema se plantea como una solución única para dos ámbitos de actividad: 
 
 RG-1. Gestionar el inventario
 
-Como empleado, 
+Como gerente , 
 
 quiero gestionar el inventario de productos, 
 
@@ -66,19 +66,12 @@ para conocer y mantener actualizada la disponibilidad de mercancía de la tienda
 
 RG-2. Gestionar los pedidos
 
-Como empleado, 
+Como  gerente , 
 
 quiero gestionar los pedidos de la tienda, 
 
-para controlar las operaciones de compra realizadas tanto de forma presencial como online.
+para controlar las operaciones de compra realizadas tanto de forma  online.
 
-RG-4. Gestionar los envíos
-
-Como empleado, 
-
-quiero gestionar los envíos asociados a los pedidos online, 
-
-para controlar la entrega de los productos a los clientes.
 
 RG-8. Gestionar la información de las mascotas
 Como veterinario,

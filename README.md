@@ -64,21 +64,13 @@ quiero gestionar el inventario de productos,
 
 para conocer y mantener actualizada la disponibilidad de mercancía de la tienda.
 
-RG-2. Gestionar las ventas y los pedidos **( pedidos va en otro RG )**
+RG-2. Gestionar los pedidos
 
 Como empleado, 
 
-quiero gestionar las ventas y los pedidos de la tienda, 
+quiero gestionar los pedidos de la tienda, 
 
 para controlar las operaciones de compra realizadas tanto de forma presencial como online.
-
-RG-3. Facilitar la venta online **( Este hay que quitarlo )**
-
-Como cliente, 
-
-quiero realizar compras a través de la plataforma web, 
-
-para adquirir productos de la tienda sin necesidad de acudir físicamente al establecimiento.
 
 RG-4. Gestionar los envíos
 
@@ -88,29 +80,26 @@ quiero gestionar los envíos asociados a los pedidos online,
 
 para controlar la entrega de los productos a los clientes.
 
-RG-5. Supervisar la actividad del negocio **( Este tmb quitarlo )**
+RG-8. Gestionar la información de las mascotas
+Como veterinario,
 
-Como Gerente, 
+quiero gestionar la información de las mascotas 
 
-quiero consultar la información general de las operaciones de la tienda, gestionar el catálogo de productos de la tienda, 
+para poder realizar y mantener actualizada la atención veterinaria ofrecida a los clientes.
 
-para supervisar las ventas, los pedidos y el inventario y facilitar la gestión del negocio.
-
-RG-6. Gestionar el acceso al sistema y datos de clientes **(Este tmb )**
-
-Como Gerente, 
-
-quiero gestionar los permisos de acceso de los usuarios,gestionar la información de los clientes,
-
-para garantizar que cada usuario pueda acceder únicamente a las funciones que correspondan a su función dentro de la tienda ,disponer de los datos necesarios para administrar sus compras y pedidos.
-
-RG-7. Gestionar servicios veterinarios
+RG-7. Gestionar citas veterinarias,
 
 Como veterinario,
 
-quiero gestionar la información de las mascotas y sus citas veterinarias,
+quiero gestionar  las  citas veterinarias,
 
 para poder realizar y mantener actualizada la atención veterinaria ofrecida a los clientes.
+
+RG- ?????????????????????????
+
+
+
+
 
 ### 3.2. Usuarios del sistema
 Para garantizar la seguridad y el correcto flujo de trabajo, el sistema contempla diferentes perfiles de usuarios. Cada usuario tendrá permisos específicos adaptados a sus responsabilidades dentro del negocio:

@@ -51,7 +51,29 @@ para controlar las operaciones de compra realizadas tanto de forma  online.
 
 
 
-RG-3. 
+RG-3.Gestión del Carrito de Compras
+
+Como cliente, 
+
+quiero añadir productos al carrito de compra,
+
+para revisar el importe total y la cantidad antes de confirmar el pedid
+
+RG-4 Procesamiento de Pagos y Selección de Método
+
+Como cliente,
+
+quiero realizar el pago de mi pedido mediante distintos métodos disponibles,
+
+para completar la compra de forma cómoda y segura.
+
+RG-5: Seguimiento e Historial de Pedidos
+
+Como cliente,
+
+quiero consultar el historial de mis pedidos y su estado (pendiente, enviado, entregado), 
+
+para hacer un seguimiento de mis compras.
 
 
 

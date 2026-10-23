@@ -392,7 +392,7 @@ para poder corregir errores o incorporar mejoras sin afectar innecesariamente al
 -- fin entregable 1 --
 
 ## 5. Modelo conceptual
-
+![Modelo conceptual PetGoo](modelo-conceptual.png)
 ### 5.1. Diagramas de clases UML
 
 - con restricciones.

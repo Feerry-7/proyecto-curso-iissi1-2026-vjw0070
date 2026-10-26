@@ -51,23 +51,23 @@ para controlar las operaciones de compra realizadas tanto de forma  online.
 
 
 
-RG-3.Gestión del Carrito de Compras
+RG-3.Realizar pedidos online
 
 Como cliente, 
 
-quiero añadir productos al carrito de compra,
+quiero seleccionar productos y confirmar un pedido por internet,
 
-para revisar el importe total y la cantidad antes de confirmar el pedid
-
+para comprar sin desplazarme a la tienda.
+ 
 RG-4 Procesamiento de Pagos y Selección de Método
 
 Como cliente,
 
-quiero realizar el pago de mi pedido mediante distintos métodos disponibles,
+quiero realizar el pago de mi pedido mediante distintos métodos de pago,
 
-para completar la compra de forma cómoda y segura.
-
-RG-5: Seguimiento e Historial de Pedidos
+para completar la compra de forma cómoda .
+ 
+RG-5: Consultar mis pedidos
 
 Como cliente,
 
@@ -75,6 +75,20 @@ quiero consultar el historial de mis pedidos y su estado (pendiente, enviado, en
 
 para hacer un seguimiento de mis compras.
 
+RG-6. Gestionar clientes y cuentas
+Como cliente,
+
+quiero registrarme y gestionar mis datos y direcciones de envío, 
+
+para recibir mis pedidos y acceder a mi cuenta.
+
+RG-7. Gestionar el catálogo de categorías
+
+Como empleado,
+
+quiero organizar los productos por categorías y subcategorías, 
+
+para que los clientes encuentren fácilmente lo que buscan.
 
 
 
@@ -92,218 +106,434 @@ Es el usuario final que va a consumir los servicios que proporciona nuestro nego
 
 ### 4.1. Requisitos funcionales
 
-#### R.F.01. Gestionar productos del catálogo
-Como empleado, 
-quiero dar de alta, modificar y dar de baja productos del catálogo, 
-para mantener actualizada la oferta de productos de la tienda.
+####RF.1.1.	Registrar producto
 
-#### **Prueba de aceptación**
-- Se debe comprobar que el gerente pueda dar de alta un producto con sus datos obligatorios.
-- Se debe comprobar que el gerente pueda modificar los datos de un producto existente.
-- Se debe comprobar que el gerente pueda dar de baja un producto del catálogo.
-- Se debe aplicar la regla de negocio RN-003 para comprobar que no se permita registrar un producto con un precio igual o inferior a 0,00 €.
-
-#### R.F.02. Gestionar categorías de productos
-Como empleado, 
-quiero gestionar las categorías de los productos,
-para mantener organizado el catálogo de la tienda.
- 
-####  **Prueba de aceptación**
-- Se debe comprobar que el gerente pueda crear una nueva categoría.
-- Se debe comprobar que el gerente pueda modificar una categoría existente.
-- Se debe comprobar que el gerente pueda asociar productos a las categorías correspondientes.
-- Se debe comprobar que los cambios realizados en las categorías queden guardados correctamente.
- 
-#### R.F.03. Consultar el catálogo de productos
-Como cliente, 
-quiero consultar los productos disponibles en el catálogo, 
-para conocer los artículos que puedo adquirir en la tienda.
-
-#### **Prueba de aceptación**
-- Se debe comprobar que el cliente pueda consultar los productos disponibles en el catálogo.
-- Se debe comprobar que cada producto muestre su información relevante, incluido el nombre y el precio.
-- Se debe comprobar que los productos aparezcan organizados por categorías.
-- Se debe comprobar que los precios mostrados coincidan con los registrados en el sistema.
-
-
-
-
-#### R.F.05. Modificar precios de productos de forma localizada
-Como empleado, 
-quiero modificar el precio de determinados productos, 
-para actualizar los precios que necesiten cambios durante la actividad de la tienda. 
-
-#### **Prueba de aceptación**
-- Se debe comprobar que el dependiente pueda modificar el precio de un producto dentro de sus permisos.
-- Se debe comprobar que el nuevo precio quede guardado correctamente.
-- Se debe comprobar que el dependiente no pueda modificar precios de productos para los que no tenga autorización.
-
-
-#### R.F.06. Consultar y actualizar el inventario
 Como empleado,
-quiero consultar y actualizar el stock de los productos, 
-para mantener controlada la disponibilidad de mercancía de la tienda.
 
-#### **Prueba de aceptación**
-- Se debe comprobar que el dependiente pueda consultar el stock disponible de un producto.
-- Se debe comprobar que pueda actualizar las existencias según sus permisos.
-- Se debe comprobar que el sistema refleje correctamente las cantidades actualizadas.
+quiero dar de alta un producto nuevo, 
+
+para ofrecerlo en la tienda.
+
+PA-1.1.1: Se registra un producto con todos los datos válidos y aparece en el listado de inventario.
+
+PA-1.1.2: Se registra un producto sin imagen y se guarda correctamente (la imagen es opcional).
+
+PA-1.1.3: Se intenta registrar un producto sin nombre, precio o stock y se recibe un mensaje de error.
+
+PA-1.1.4: Se intenta registrar un producto con precio negativo o stock negativo y se recibe un mensaje de error.
 
 
-#### R.F.07. Realizar auditorías de inventario
+####RF.1.2.	Modificar producto
+
+Como empleado, 
+
+quiero modificar los datos de un producto, incluido su stock,
+
+para mantener el inventario actualizado.
+
+PA-1.2.1: Se modifica el precio de un producto y el listado muestra el nuevo precio.
+
+PA-1.2.2: Se modifica el stock de un producto y el listado muestra el nuevo valor.
+
+PA-1.2.3: Se intenta dejar un dato obligatorio vacío y se recibe un mensaje de error.
+
+####RF.1.3.	Eliminar producto
+
 Como empleado,
-quiero realizar auditorías del inventario, 
-para comprobar que las existencias registradas coinciden con las existencias reales de la tienda.
 
-#### **Prueba de aceptación**
-- Se debe comprobar que el gerente pueda consultar las existencias registradas.
-- Se debe comprobar que pueda registrar los resultados de un recuento físico.
-- Se debe comprobar que se puedan identificar las diferencias entre el stock real y el registrado.
+quiero eliminar un producto,
 
+para que deje de mostrarse en la tienda.
 
+PA-1.3.1: Se elimina un producto y deja de aparecer en el catálogo y en el inventario.
 
-
-#### R.F.10. Registro y autenticación de usuarios
-Como cliente, 
-quiero crear una cuenta en la plataforma e iniciar sesión,
-para gestionar mis datos personales, direcciones y realizar pedidos online.
-
-#### **Prueba de aceptación**
-- Se debe comprobar que un cliente pueda crear una cuenta proporcionando los datos obligatorios.
-- Se debe comprobar que un usuario registrado pueda iniciar sesión con sus credenciales correctas.
-- Se debe comprobar que el sistema rechace el inicio de sesión cuando las credenciales sean incorrectas.
-- Se debe aplicar la regla de negocio RN-006 para impedir que dos usuarios tengan el mismo correo electrónico.
+PA-1.3.2: Se elimina un producto que figura en pedidos anteriores y esos pedidos siguen mostrando sus líneas con los datos originales.
 
 
-#### RF-11. Gestionar direcciones de entrega
-Como Cliente, 
-quiero añadir, modificar y seleccionar direcciones de entrega, 
-para agilizar la confirmación de pedidos online.
+####RF.1.4.	Consultar inventario
 
-#### **Prueba de aceptación**
-- Se debe comprobar que el cliente pueda añadir una nueva dirección de entrega.
-- Se debe comprobar que pueda modificar una dirección previamente registrada.
-- Se debe comprobar que pueda seleccionar una de sus direcciones al tramitar un pedido.
-- Se debe comprobar que un cliente no pueda modificar ni consultar las direcciones privadas de otro cliente.
+Como empleado,
 
+quiero consultar el listado de productos con su stock, 
 
-#### R.F.12. Tramitación de pedidos online (Carrito de compra)
-Como cliente, 
-quiero añadir productos al carrito, seleccionar dirección de envío y método de pago para realizar el pedido, 
-para comprar los productos desde la plataforma web.
+para conocer la disponibilidad de mercancía.
 
-#### **Prueba de aceptación**
-- Se debe comprobar que el cliente pueda añadir productos al carrito y modificar las cantidades.
-- Se debe comprobar que el sistema calcule correctamente el importe de los productos seleccionados.
-- Se debe comprobar que el sistema aplique los gastos de envío correspondientes: 0,00 € si el importe de los productos supera los 70,00 €, y 4,95 € en caso contrario.
-- Se debe aplicar la regla de negocio RN-002 para impedir que se tramite un pedido cuyo importe no sea superior a 20,00 €.
-- Se debe aplicar la regla de negocio RN-003 para garantizar que los productos tengan precios positivos.
-- Se debe aplicar la regla de negocio RN-001 para impedir que el stock resulte negativo al tramitar el pedido.
+PA-1.4.1: El listado muestra todos los productos con su stock actual.
+
+PA-1.4.2: [RN-006] Tras pasar un pedido a “pagado”, el stock mostrado en el inventario ya está descontado.
 
 
+####RF.2.1	Consultar pedidos	
 
-
-#### R.F.15. Consultar pedidos y ventas del cliente
-Como cliente, 
-quiero consultar mis pedidos y compras realizadas, 
-para conocer el estado y el historial de mis operaciones con la tienda.
-
-#### **Prueba de aceptación**
-- Se debe comprobar que el cliente pueda consultar sus pedidos online.
-- Se debe comprobar que pueda consultar el estado de cada pedido.
-- Se debe comprobar que pueda consultar el historial de sus compras.
-- Se debe comprobar que no pueda acceder a los pedidos o compras de otros clientes.
-
-
-
-
-#### R.F.16. Gestionar pedidos online
 Como empleado, 
-quiero gestionar los pedidos realizados mediante la plataforma web, 
-para preparar y controlar las compras realizadas por los clientes.
 
-#### **Prueba de aceptación**
-- Se debe comprobar que el dependiente pueda consultar los pedidos online registrados.
-- Se debe comprobar que pueda consultar los productos y las cantidades de cada pedido.
-- Se debe comprobar que pueda actualizar el estado del pedido durante su preparación.
-- Se debe aplicar la regla de negocio RN-001 para garantizar que la gestión de los pedidos no provoque que el stock sea negativo.
+quiero consultar el listado de pedidos y su detalle,
 
-#### R.F.20. Gestionar envíos
+para controlar las compras realizadas.
+
+PA-2.1.1: El empleado ve el listado de todos los pedidos con fecha, estado y cliente.
+
+PA-2.1.2: Al abrir un pedido se muestran sus líneas (producto, cantidad y precio unitario) y su precio total.
+
+PA-2.1.3: El precio total mostrado coincide con la suma de cantidad × precio unitario de todas sus líneas.
+
+####RF.2.2	Actualizar estado del pedido
+
 Como empleado, 
-quiero gestionar los envíos asociados a los pedidos online, 
-para controlar la entrega de los productos a los clientes.
 
-#### **Prueba de aceptación**
-- Se debe comprobar que el dependiente pueda consultar los envíos asociados a los pedidos online.
-- Se debe comprobar que pueda registrar o modificar los datos del envío.
-- Se debe comprobar que pueda actualizar el estado del envío.
-- Se debe comprobar que cada envío quede asociado al pedido correspondiente.
+quiero cambiar el estado de un pedido, 
+
+para reflejar en qué punto del proceso se encuentra.
+
+PA-2.2.1: Un pedido “pendiente” pasa a “pagado” y el cambio queda reflejado.
+
+PA-2.2.2: [RN-006] Al pasar un pedido a “pagado”, el stock de cada producto del pedido se reduce en la cantidad de su línea.
+
+PA-2.2.3: [RN-006] Al pasar a “preparado”, “enviado” o “entregado”, el stock no vuelve a descontarse.
+
+PA-2.2.4: [RN-006] Se intenta pasar a “pagado” un pedido cuya cantidad supera el stock disponible y se recibe un mensaje de error, sin cambiar el estado ni el stock.
+
+PA-2.2.5: Se intenta un cambio de estado no válido (por ejemplo, de “pendiente” a “entregado”) y se recibe un mensaje de error.
+
+####RF.2.3	Cancelar pedido
+
+Como empleado,
+
+quiero cancelar un pedido, 
+
+para anular compras que no se vayan a servir.
+
+PA-2.3.1: Se cancela un pedido “pendiente” y su estado pasa a “cancelado”.
+
+PA-2.3.2: Se intenta cancelar un pedido ya “entregado” y se recibe un mensaje de error.
+
+PA-2.3.3: [RN-004] Un pedido cancelado deja de contar en el gasto mensual del cliente .
+
+PA-2.3.4: [RN-006] Se cancela un pedido ya “pagado” y el stock se repone .
+
+####RF-3.1	Consultar catálogo	
+
+Como cliente,
+
+quiero consultar los productos y filtrarlos por categoría, 
+
+para encontrar lo que busco.
+
+PA-3.1.1: El cliente ve los productos con nombre, descripción, marca, precio y categoría.
+
+PA-3.1.2: Al filtrar por una categoría solo aparecen los productos de esa categoría.
+
+PA-3.1.3: Un producto sin imagen se muestra sin errores.
+
+####RF.3.2	Añadir producto al carrito	
+
+Como cliente, quiero añadir productos al carrito, 
+
+para ir reuniendo mi compra.
+
+PA-3.2.1: Se añade un producto con cantidad 1 y el carrito lo muestra con el importe correcto.
+
+PA-3.2.2: [RN-001] Se añade un producto con 100 unidades y se acepta.
+
+PA-3.2.3: [RN-001] Se intenta añadir 101 unidades y se recibe un mensaje de error.
+
+PA-3.2.4: [RN-001] Se intenta añadir 0 unidades o una cantidad negativa y se recibe un mensaje de error.
+
+PA-3.2.5: [RN-003] Se añaden dos productos de la misma categoría y se aceptan.
+
+PA-3.2.6: [RN-003] Con un producto de la categoría A en el carrito, se intenta añadir uno de la categoría B y se recibe un mensaje de error.
 
 
-#### R.F.21. Cancelar pedidos online
+####RF.3.3	Modificar carrito
+
+Como cliente,
+
+quiero cambiar cantidades o quitar productos del carrito,
+
+para ajustar mi compra antes de confirmarla.
+
+PA-3.3.1: Se cambia la cantidad de un producto y el importe total se recalcula.
+
+PA-3.3.2: [RN-001] Se intenta subir la cantidad por encima de 100 y se recibe un mensaje de error.
+
+PA-3.3.3: Se quita un producto y desaparece del carrito, recalculándose el total.
+
+PA-3.3.4: Se quitan todos los productos y el carrito queda vacío.
+
+####RF.3.4	Confirmar pedido
+
 Como cliente, 
-quiero cancelar mis pedidos online cuando sea posible, 
-para poder anular una compra que ya no deseo realizar.
 
-#### **Prueba de aceptación**
-- Se debe comprobar que el cliente pueda consultar sus pedidos para seleccionar el que desea cancelar.
-- Se debe comprobar que pueda cancelar un pedido cuando cumpla las condiciones establecidas.
-- Se debe comprobar que el sistema actualice el estado del pedido tras aceptar la cancelación.
-- Se debe comprobar que el sistema impida cancelar un pedido cuando ya no sea posible hacerlo según las condiciones del negocio.
+quiero confirmar el contenido del carrito como pedido, 
+
+para realizar la compra.
+
+PA-3.4.1: Se confirma un carrito válido y se crea un pedido en estado “pendiente” con sus líneas y el precio total correcto.
+
+PA-3.4.2: Se intenta confirmar un carrito vacío y se recibe un mensaje de error.
+
+PA-3.4.3: [RN-002] Se confirma el pedido con una dirección del propio cliente y se acepta.
+
+PA-3.4.4: [RN-002] Se intenta confirmar el pedido con una dirección que pertenece a otro cliente y se recibe un mensaje de error.
+
+PA-3.4.5: [RN-004] Un cliente sin compras en el mes confirma un pedido de 100 € y se acepta.
+
+PA-3.4.6: [RN-004] Un cliente con 60 € gastados en el mes intenta confirmar un pedido de 50 € y se recibe un mensaje de error por superar el máximo mensual.
+
+PA-3.4.7: [RN-004] Un cliente que alcanzó el límite el mes anterior puede comprar de nuevo al empezar el mes siguiente.
+
+PA-3.4.8: [RN-003] Se intenta confirmar un pedido con productos de dos categorías distintas y se recibe un mensaje de error.
+
+PA-3.4.9: [RN-001] Se intenta confirmar un pedido con una línea de más de 100 unidades y se recibe un mensaje de error.
 
 
+####RF.4.1	Seleccionar método de pago	
 
+Como cliente, quiero elegir cómo pagar mi pedido, 
 
+para hacerlo de la forma que me resulte más cómoda.
 
+PA-4.1.1: Se ofrecen exactamente los métodos tarjeta, PayPal, transferencia y Bizum.
 
+PA-4.1.2: Se elige un método y queda asociado al pedido.
 
+PA-4.1.3: Se intenta pagar sin seleccionar método y se recibe un mensaje de error.
 
+####RF.4.2	Pagar pedido
+
+Como cliente,
+
+quiero realizar el pago de mi pedido,
+
+para completar la compra.
+
+PA-4.2.1: Se paga un pedido “pendiente” con un método válido y su estado pasa a “pagado”.
+
+PA-4.2.2: [RN-006] Tras el pago, el stock de cada producto del pedido se reduce según las cantidades compradas.
+
+PA-4.2.3: Un pago rechazado deja el pedido en “pendiente” y el stock sin cambios.
+
+PA-4.2.4: Se intenta pagar un pedido ya pagado o cancelado y se recibe un mensaje de error.
+
+PA-4.2.5: [RN-006] Dos clientes pagan a la vez el último stock de un producto: solo uno de los pagos se completa.
+
+####RF.5.1	Consultar historial de pedidos	
+
+Como cliente, 
+
+quiero consultar el listado de mis pedidos, 
+
+para revisar mis compras anteriores.
+
+PA-5.1.1: El cliente ve el listado de sus pedidos con fecha, estado y precio total.
+
+PA-5.1.2: El cliente no ve pedidos de otros clientes.
+
+PA-5.1.3: Un cliente sin pedidos ve un listado vacío con un mensaje informativo.
+
+####RF.5.2	Consultar estado de un pedido	
+
+Como cliente, 
+
+quiero ver el estado y el detalle de un pedido,
+
+para hacer su seguimiento.
+
+PA-5.2.1: Al abrir un pedido se muestran su estado actual y los productos con cantidades.
+
+PA-5.2.2: Cuando el empleado cambia el estado, el cliente ve el nuevo estado.
+
+PA-5.2.3: El cliente intenta abrir un pedido de otro cliente y se le deniega el acceso.
+
+####RF.6.1	Registrarse	
+
+Como cliente, 
+
+quiero crear una cuenta,
+
+para poder realizar pedidos.
+
+PA-6.1.1: Se registra un cliente con email, contraseña, nombre, apellido y teléfono válidos y puede iniciar sesión.
+
+PA-6.1.2: Se intenta registrar un email ya existente y se recibe un mensaje de error.
+
+PA-6.1.3: Se intenta registrar con un email de formato inválido o con un dato obligatorio vacío y se recibe un mensaje de error.
+
+####RF.6.2	Iniciar sesión
+
+Como usuario,
+
+quiero identificarme con mi email y contraseña, 
+
+para acceder a mi cuenta.
+
+PA-6.2.1: Un usuario con credenciales correctas accede a su cuenta.
+
+PA-6.2.2: Con contraseña incorrecta o email inexistente se recibe un mensaje de error genérico.
+
+PA-6.2.3: Un empleado accede y ve las funciones de empleado, y un cliente solo las de cliente.
+
+####RF.6.3	Modificar datos personales
+
+Como cliente, 
+
+quiero modificar mis datos personales,
+
+para mantenerlos actualizados.
+
+PA-6.3.1: Se modifican nombre y teléfono y el cambio se refleja.
+
+PA-6.3.2: Se intenta dejar un dato obligatorio vacío y se recibe un mensaje de error.
+
+####RF.6.4	Gestionar direcciones	
+
+Como cliente, 
+
+quiero añadir, modificar y eliminar mis direcciones de envío, 
+
+para recibir mis pedidos donde me convenga.
+
+PA-6.4.1: Se añade una dirección con calle, código postal, provincia y país, y aparece en la lista del cliente.
+
+PA-6.4.2: Se modifica una dirección y el cambio se refleja.
+
+PA-6.4.3: Se elimina una dirección y desaparece de la lista.
+
+PA-6.4.4: [RN-005] Se añaden tres direcciones en la misma ciudad y se aceptan.
+
+PA-6.4.5: [RN-005] Se intenta añadir una cuarta dirección en la misma ciudad y se recibe un mensaje de error.
+
+PA-6.4.6: [RN-005] Se pueden tener tres direcciones en una ciudad y otras tres en otra ciudad distinta.
+
+PA-6.4.7: [RN-005] Al modificar una dirección para cambiarla a una ciudad que ya tiene tres, se recibe un mensaje de error.
+
+PA-6.4.8: Un cliente debe tener al menos una dirección (cardinalidad 1..* de tu modelo): se intenta eliminar la última y se recibe un mensaje de error.
+
+####RF.7.1	Crear categoría
+
+Como empleado,
+
+quiero crear categorías y subcategorías, 
+
+para organizar los productos.
+
+PA-7.1.1: Se crea una categoría con nombre y descripción y aparece en el listado.
+
+PA-7.1.2: Se crea una subcategoría indicando su categoría padre y queda vinculada a ella.
+
+PA-7.1.3: Se intenta crear una categoría sin nombre y se recibe un mensaje de error.
+
+####RF.7.2	Modificar o eliminar categoría	
+
+Como empleado,
+
+quiero modificar o eliminar categorías, 
+
+para mantener el catálogo ordenado.
+
+PA-7.2.1: Se modifica el nombre de una categoría y el cambio se refleja en el catálogo.
+
+PA-7.2.2: Se elimina una categoría sin productos ni subcategorías y desaparece.
+
+PA-7.2.3: Se intenta eliminar una categoría con productos asociados y se recibe un mensaje de error.
+
+####RF.7.3	Asignar categoría a un producto	
+
+Como empleado, 
+
+quiero asignar un producto a una categoría,
+
+para que los clientes lo encuentren.
+
+PA-7.3.1: Se asigna una categoría a un producto y aparece al filtrar por ella.
+
+PA-7.3.2: Se asigna una segunda categoría a un producto que ya tiene una y se recibe un mensaje de error (la multiplicidad de tu modelo es 1).
 
 
 
 ### 4.1.1. Requisitos de información
-#### RI-001: Información de usuarios (Clientes y Empleados)
-Como Gerente del sistema,
-quiero almacenar la información identificativa de los usuarios: 
-              ID de Usuario (único), Nombre, Apellidos, Correo electrónico (único), Teléfono, Nombre              de usuario, Contraseña, Foto de perfil y Rol (Cliente y Empleado).
-              En el caso de los Clientes: Direcciones de entrega guardadas. 
-              En el caso de los Empleados: DNI (único) y Fecha de contratación.  
-para autenticar a los usuarios y gestionar las operaciones comerciales de forma personalizada. 
+####RI-1.1.1	Información de productos	
 
-
-
-
-
-
-#### RI-003: Información de productos y categorías
 Como empleado,
-quiero almacenar la información de los productos y sus categorías: 
-Producto: ID de Producto (único), Nombre, Descripción, Precio (€), Stock (unidades) y Foto.
-Categoría: ID de Categoría (único), Nombre y Descripción. 
-Cada producto estará asociado a una categoría ,
-para organizar el catálogo de productos y mantener actualizada la información del inventario.
 
+quiero disponer de la siguiente información de los productos: nombre, descripción, marca, precio, imagen (opcional) y stock.
 
+####RI-2.1.1	Información de pedidos
 
-
-
-
-
-#### RI-005: Información de pedidos
 Como empleado,
-quiero almacenar la información correspondiente a los pedidos y las compras realizadas en PetGoo, incluyendo:
-Pedido: ID de pedido (único), fecha y hora de creación, cliente asociado, empleado responsable (cuando se trate de una venta presencial), estado del pedido (Pendiente, En preparación, Enviado, Entregado o Cancelado), forma de pago (Tarjeta o Efectivo),  dirección de envío (cuando corresponda) e importe total (€).
-Líneas de pedido: producto asociado, cantidad adquirida, precio unitario aplicado en el momento de la compra y subtotal de la línea.
-Cada pedido estará asociado a un cliente y contendrá las líneas correspondientes a los productos adquiridos. En las compras presenciales se registrará el empleado responsable, mientras que en los pedidos online se almacenará la dirección de envío cuando sea necesaria.
-para emitir justificantes de compra, mantener un registro de las operaciones comerciales y facilitar el seguimiento de los pedidos y las ventas.
 
+quiero disponer de la siguiente información de los pedidos: fecha, estado, método de pago, precio total (calculado), cliente que lo realiza y empleado que lo supervisa.
 
+####RI-2.1.2	Información de líneas de pedido	
 
-#### RI-006: Información de direcciones de entrega
+Como empleado,
+
+quiero conocer,
+
+para cada producto de un pedido, la cantidad y el precio unitario.
+
+####RI-2.2.1	Estados del pedido
+
+Como empleado, 
+
+quiero que un pedido pueda estar en uno de estos estados: pendiente, pagado, preparado, enviado, entregado o cancelado.
+
+####RI-3.1.1	Información del catálogo
+
 Como cliente,
-quiero registrar mis direcciones de entrega: 
-ID de Dirección (único), Calle, Número, Piso/Puerta, Código Postal, Localidad, Provincia y Campo indicador de dirección seleccionada por defecto.
-Para agilizar el proceso de compra online.
+
+quiero ver de cada producto: nombre, descripción, marca, precio, imagen y categoría.
+
+####RI-3.2.1	Información del carrito	
+
+Como cliente,
+
+quiero ver en el carrito los productos añadidos, la cantidad de cada uno y el importe total.
+
+####RI-4.1.1	Métodos de pago	
+
+Como cliente,
+
+quiero poder elegir entre estos métodos de pago: tarjeta, PayPal, transferencia y Bizum.
+
+####RI-5.1.1	Información del historial	
+
+Como cliente,
+
+quiero ver de cada pedido: fecha, estado, precio total y productos comprados con su cantidad.
+
+####RI-6.1.1	Información de usuarios	
+
+Como usuario, 
+
+quiero que se almacene mi email y contraseña,
+
+para acceder al sistema.
+
+####RI-6.1.2	Información de clientes	
+
+Como cliente,
+
+quiero que se almacene mi nombre, apellido y teléfono.
+
+####RI-6.4.1	Información de direcciones	
+
+Como cliente,
+
+quiero registrar para cada dirección: calle, código postal, provincia y país.
+
+####RI-7.1.1	Información de categorías
+
+Como empleado, 
+
+quiero almacenar de cada categoría su nombre, descripción y, si es subcategoría, su categoría padre.
+
+
+
+
+
+
+
 
 
 

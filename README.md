@@ -619,7 +619,151 @@ para poder corregir errores o incorporar mejoras sin afectar innecesariamente al
 ### 5.2. Escenarios de prueba
 
 - con descripción textual y diagrama de objetos UML.
+### 5.2. Escenarios de prueba
 
+Cada escenario se describe con texto y con un diagrama de objetos UML. Los escenarios **E1, E2 y E6** son válidos y los **E3, E4 y E5** son inválidos (violan una regla de negocio).
+
+> **Estado de un pedido.** El atributo derivado `/estado` se calcula a partir de las fechas: `cancelado` si `fechaCancelacion` tiene valor; si no, `enviado` si `fechaEnvio` tiene valor; si no, `pagado` si `fechaPago` tiene valor; en otro caso el pedido está pendiente de pago.
+
+#### E1. Pedido válido con envío gratuito
+
+**Descripción.** La cliente Ana García, con una dirección registrada en Sevilla, compra 2 sacos de "Pienso seco adulto" (45,90 € cada uno) de la subcategoría "Pienso seco". El importe de los productos es 91,80 €, superior a 70 €, por lo que los gastos de envío son 0,00 € (RN-005). El pedido supera el mínimo de 20 € (RN-002), el stock es suficiente (RN-001) y se paga con tarjeta. Al completarse, el stock baja de 10 a 8 unidades (RN-004). Lo supervisa el empleado Luis Pérez.
+
+**Diagrama de objetos.**
+
+```mermaid
+classDiagram
+    class ana["ana : Cliente"] {
+        email = ana@mail.com
+        nombre = Ana
+        apellido = García
+        telefono = 600111222
+    }
+    class d1["d1 : Dirección"] {
+        calle = Sierpes 10
+        codigoPostal = 41004
+        provincia = Sevilla
+        ciudad = Sevilla
+    }
+    class luis["luis : Empleado"] {
+        email = luis@petgoo.com
+        codigo = EMP-01
+    }
+    class p1["p1 : Pedido"] {
+        fechaPago = 2026-10-20
+        fechaEnvio = null
+        fechaCancelacion = null
+        estado = pagado
+        metodoPago = tarjeta
+        precioTotal = 91.80
+    }
+    class l1["l1 : LineaPedido"] {
+        cantidad = 2
+        precio_unitario = 45.90
+    }
+    class pr1["pr1 : Producto"] {
+        nombre = Pienso seco adulto
+        precio = 45.90
+        stock = 8
+    }
+    class c2["c2 : Categoría"] {
+        nombre = Pienso seco
+    }
+    class c1["c1 : Categoría"] {
+        nombre = Alimentación
+    }
+    ana --> d1 : tiene
+    ana --> p1 : realiza
+    p1 --> d1 : tiene
+    luis --> p1 : supervisa
+    p1 --> pr1 : contiene
+    l1 .. p1
+    l1 .. pr1
+    pr1 --> c2 : perteneceA
+    c2 --> c1 : categoriaPadre
+```
+
+**Reglas comprobadas:** RN-001, RN-002, RN-004, RN-005.
+
+---
+
+#### E2. Pedido válido con gastos de envío
+
+**Descripción.** El cliente Pablo Ruiz compra 3 unidades de "Juguete mordedor" (10,00 € cada una). El importe es 30,00 €: supera los 20 € (RN-002) pero no los 70 €, así que se aplican gastos de envío de 4,95 € y el total es **34,95 €** (RN-005). Paga con PayPal.
+
+| Objeto | Clase | Atributos |
+|---|---|---|
+| `pablo` | Cliente | email = pablo@mail.com, nombre = Pablo, apellido = Ruiz |
+| `d2` | Dirección | calle = Betis 5, codigoPostal = 41010, provincia = Sevilla, ciudad = Sevilla |
+| `p2` | Pedido | fechaPago = 2026-10-21, fechaEnvio = null, fechaCancelacion = null, estado = pagado, metodoPago = paypal, precioTotal = 34.95 |
+| `l2` | LineaPedido | cantidad = 3, precio_unitario = 10.00 |
+| `pr2` | Producto | nombre = Juguete mordedor, precio = 10.00, stock = 20 |
+
+**Enlaces:** `pablo` realiza `p2`; `p2` tiene `d2`; `p2` contiene `pr2` mediante `l2`.
+
+**Reglas comprobadas:** RN-002, RN-005.
+
+---
+
+#### E3. Pedido inválido: importe inferior al mínimo
+
+**Descripción.** La cliente Ana intenta comprar 1 unidad de "Cepillo para perros" (15,00 €). El importe no supera los 20 € y el sistema **rechaza** el pedido (RN-002); no se crea el objeto `Pedido`.
+
+| Objeto | Clase | Atributos |
+|---|---|---|
+| `ana` | Cliente | email = ana@mail.com |
+| `pr3` | Producto | nombre = Cepillo para perros, precio = 15.00, stock = 12 |
+| `p3` (**no se crea**) | Pedido | precioTotal = 15.00 + envío |
+
+**Resultado esperado:** error "importe mínimo de pedido no alcanzado"; el stock de `pr3` no cambia (12).
+
+**Regla comprobada:** RN-002.
+
+---
+
+#### E4. Pedido inválido: stock insuficiente
+
+**Descripción.** El cliente Pablo intenta comprar 5 unidades de "Collar antipulgas" (12,00 €/unidad, 60 € en total), pero el producto solo tiene 3 unidades en stock. Completar la venta dejaría el stock en −2, así que el sistema **rechaza** el pedido (RN-001).
+
+| Objeto | Clase | Atributos |
+|---|---|---|
+| `pablo` | Cliente | email = pablo@mail.com |
+| `pr4` | Producto | nombre = Collar antipulgas, precio = 12.00, stock = 3 |
+| `l4` (**no se crea**) | LineaPedido | cantidad = 5, precio_unitario = 12.00 |
+
+**Resultado esperado:** error "stock insuficiente"; `pr4.stock` sigue siendo 3.
+
+**Regla comprobada:** RN-001.
+
+---
+
+#### E5. Alta inválida: email duplicado
+
+**Descripción.** Ya existe el usuario `ana` con email `ana@mail.com`. Se intenta registrar a otro cliente, Marta López, con el mismo email. El sistema **rechaza** el registro (RN-006).
+
+| Objeto | Clase | Atributos |
+|---|---|---|
+| `ana` | Cliente | email = ana@mail.com, nombre = Ana |
+| `marta` (**no se crea**) | Cliente | email = ana@mail.com, nombre = Marta |
+
+**Resultado esperado:** error "el correo electrónico ya está registrado".
+
+**Regla comprobada:** RN-006.
+
+---
+
+#### E6. Jerarquía de categorías y producto con precio válido
+
+**Descripción.** La categoría raíz "Alimentación" (sin padre) tiene dos subcategorías: "Pienso seco" y "Comida húmeda". El producto "Latas de pollo" (1,80 €, estrictamente mayor que 0, por RN-003) se asocia a "Comida húmeda".
+
+| Objeto | Clase | Atributos / enlaces |
+|---|---|---|
+| `c1` | Categoría | nombre = Alimentación; categoriaPadre = *ninguna* |
+| `c2` | Categoría | nombre = Pienso seco; categoriaPadre = `c1` |
+| `c3` | Categoría | nombre = Comida húmeda; categoriaPadre = `c1` |
+| `pr5` | Producto | nombre = Latas de pollo, precio = 1.80, stock = 50; perteneceA `c3` |
+
+**Reglas comprobadas:** RN-003 y la asociación recursiva Categoría–subcategoría (0..1 padre, * hijas).
 ## 6. Matrices de trazabilidad
 
 - Matriz de trazabilidad entre los elementos del modelo conceptual y los requisitos.

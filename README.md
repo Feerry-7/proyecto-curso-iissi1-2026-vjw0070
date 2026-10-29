@@ -476,7 +476,9 @@ para cada producto de un pedido, la cantidad y el precio unitario.
 
 Como empleado, 
 
-quiero que un pedido pueda estar en uno de estos estados: pendiente, pagado, preparado, enviado, entregado o cancelado.
+quiero que un pedido pueda estar en uno de estos estados: pendiente, pagado, preparado, enviado, entregado o cancelado,
+
+para
 
 ####RI-3.1.1	Información del catálogo
 

@@ -71,7 +71,7 @@ RG-5: Consultar mis pedidos
 
 Como cliente,
 
-quiero consultar el historial de mis pedidos y su estado (pendiente, enviado, entregado), 
+quiero consultar el historial de mis pedidos y su estado (pendiente,pagado,preparado,enviado,entregado,cancelado), 
 
 para hacer un seguimiento de mis compras.
 
@@ -555,10 +555,13 @@ No se puede comprar de dos categorías diferentes en un mismo pedido.
 No se puede comprar más de 100€ al mes.
 
 ##### RN-005: Máximo direcciones por ciudad. 
-No se puede poner más de 3 direcciones en la misma ciudad.  
+No se puede poner más de 3 direcciones con el mismo código postal.  
 
 ##### RN-006: Actualización del stock.
-Al pasar a "pagado" se descuenta el stock automáticamente.
+Al pasar a "enviado" se descuenta el stock automáticamente.
+
+##### RN-007:Comprobacion del stock.
+No se puede comprar mas de la cantidad del stock.
 
 
 
@@ -608,10 +611,10 @@ para poder corregir errores o incorporar mejoras sin afectar innecesariamente al
 -- fin entregable 1 --
 
 ## 5. Modelo conceptual
-![Modelo conceptual PetGoo](modelo-conceptual.png)
+
 ### 5.1. Diagramas de clases UML
 
-- con restricciones.
+![Modelo conceptual PetGoo](modelo-conceptual.png)
 
 ### 5.2. Escenarios de prueba
 

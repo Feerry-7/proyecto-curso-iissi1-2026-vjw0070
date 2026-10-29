@@ -456,13 +456,17 @@ PA-7.3.2: Se asigna una segunda categoría a un producto que ya tiene una y se r
 
 Como empleado,
 
-quiero disponer de la siguiente información de los productos: nombre, descripción, marca, precio, imagen (opcional) y stock.
+quiero disponer de la siguiente información de los productos: nombre, descripción, precio, imagen (opcional) y stock,
+
+para poder gestionar el inventario de manera eficiente ,
 
 ####RI-2.1.1	Información de pedidos
 
 Como empleado,
 
-quiero disponer de la siguiente información de los pedidos: fecha, estado, método de pago, precio total (calculado), cliente que lo realiza y empleado que lo supervisa.
+quiero disponer de la siguiente información de los pedidos: fecha, estado, método de pago, precio total (calculado), cliente que lo realiza y empleado que lo supervisa,
+
+para hacer un seguimiento preciso de las ventas, verificar los pagos y asegurar que los envíos se procesen a tiempo.
 
 ####RI-2.1.2	Información de líneas de pedido	
 
@@ -478,31 +482,39 @@ Como empleado,
 
 quiero que un pedido pueda estar en uno de estos estados: pendiente, pagado, preparado, enviado, entregado o cancelado,
 
-para
+para hacer un seguimiento preciso de las ventas, verificar los pagos y asegurar que los envíos se procesen a tiempo.
 
 ####RI-3.1.1	Información del catálogo
 
 Como cliente,
 
-quiero ver de cada producto: nombre, descripción, marca, precio, imagen y categoría.
+quiero ver de cada producto: nombre, descripción, marca, precio, imagen y categoría,
+
+para controlar el flujo de vida de los pedidos, garantizar la transparencia en el proceso de entrega y mantener informados tanto a los clientes como al equipo.
 
 ####RI-3.2.1	Información del carrito	
 
 Como cliente,
 
-quiero ver en el carrito los productos añadidos, la cantidad de cada uno y el importe total.
+quiero ver en el carrito los productos añadidos, la cantidad de cada uno y el importe total,
+
+para evisar el resumen de mi compra, ajustar las cantidades si es necesario y conocer el coste exacto antes de proceder al pago.
 
 ####RI-4.1.1	Métodos de pago	
 
 Como cliente,
 
-quiero poder elegir entre estos métodos de pago: tarjeta, PayPal, transferencia y Bizum.
+quiero poder elegir entre estos métodos de pago: tarjeta, PayPal, transferencia y Bizum,
+
+seleccionar la opción que me resulte más cómoda, rápida y segura según mis preferencias en el momento de la compra.
 
 ####RI-5.1.1	Información del historial	
 
 Como cliente,
 
-quiero ver de cada pedido: fecha, estado, precio total y productos comprados con su cantidad.
+quiero ver de cada pedido: fecha, estado, precio total y productos comprados con su cantidad,
+
+para consultar el historial de mis compras, verificar el detalle de lo que he adquirido y comprobar el estado actual de mis envíos.
 
 ####RI-6.1.1	Información de usuarios	
 
@@ -516,19 +528,29 @@ para acceder al sistema.
 
 Como cliente,
 
-quiero que se almacene mi nombre, apellido y teléfono.
+quiero que se almacene mi nombre, apellido y teléfono,
+
+para facilitar el proceso de compra, recibir notificaciones sobre el estado de mis pedidos y permitir que el servicio de atención al cliente contacte conmigo si surge algún problema.
 
 ####RI-6.4.1	Información de direcciones	
 
 Como cliente,
 
-quiero registrar para cada dirección: calle, código postal, provincia y país.
+quiero registrar para cada dirección: calle, código postal, provincia y país,
+
+para asegurar que mis pedidos se entreguen en el lugar correcto sin errores y poder gestionar fácilmente múltiples puntos
+
+de envío para mis compras.
 
 ####RI-7.1.1	Información de categorías
 
 Como empleado, 
 
-quiero almacenar de cada categoría su nombre, descripción y, si es subcategoría, su categoría padre.
+quiero almacenar de cada categoría su nombre, descripción y, si es subcategoría, su categoría padre,
+
+organizar el catálogo de forma jerárquica, facilitar la navegación de los clientes y clasificar correctamente los 
+
+productos en el sistema.
 
 
 

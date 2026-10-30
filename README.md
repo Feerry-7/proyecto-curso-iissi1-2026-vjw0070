@@ -818,7 +818,7 @@ classDiagram
 - Restricciones sobre el MC / Elementos del modelo tecnológico (SQL) (Triggers, checks, etc.)
 - Incluir Reglas de negocio — Constraints/Triggers en las matrices de trazabilidad para el entregable 3
 
-|       | EntidadX   | AsociaciónX  | RestricciónX  | Entidad2 ...   | 
+|       | usuario  | AsociaciónX  | RestricciónX  | Entidad2 ...   | 
 |:-------|:-------|:-------|:-------|:-------|
 | TABLA-1 |        |        |        |        |
 | TABLA-2 |        |        |        |        |

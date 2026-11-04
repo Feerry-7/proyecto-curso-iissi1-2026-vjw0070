@@ -794,7 +794,7 @@ classDiagram
 
 | Requisito | Usuario | Cliente | Empleado | Dirección | Categoría | Producto | Pedido | LíneaPedido | Usuario-Cliente | Usuario-Empleado | Cliente-Dirección | Cliente-Pedido | Empleado-Pedido | Categoría-Producto | Categoría-Categoría | Pedido-LíneaPedido | Producto-LíneaPedido | Completa-Disjunta |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| RI-1.1.1 | | | | | | | | | | | | | | | | | | |
+| RI-1.1.1 | | | | | |X | | | | | | | | | | | | |
 | RI-2.1.1 | | | | | | | | | | | | | | | | | | |
 | RI-2.1.2 | | | | | | | | | | | | | | | | | | |
 | RI-2.2.1 | | | | | | | | | | | | | | | | | | |

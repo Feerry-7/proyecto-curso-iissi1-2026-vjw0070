@@ -1,4 +1,4 @@
-# PetGoo: Sistema de Información para la Gestión de una Tienda de Mascotas
+SIG# PetGoo: Sistema de Información para la Gestión de una Tienda de Mascotas
 
 ## Miembros del grupo L7-DF-4 
 
@@ -795,7 +795,7 @@ classDiagram
 | Requisito | Usuario | Cliente | Empleado | Dirección | Categoría | Producto | Pedido | LíneaPedido | Usuario-Cliente | Usuario-Empleado | Cliente-Dirección | Cliente-Pedido | Empleado-Pedido | Categoría-Producto | Categoría-Categoría | Pedido-LíneaPedido | Producto-LíneaPedido | Completa-Disjunta |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | RI-1.1.1 | | | | | |X | | | | | | | | | | | | |
-| RI-2.1.1 | | | | | | | | | | | | | | | | | | |
+| RI-2.1.1 | |X |X | | | | X| | | | |X |X| | | | | |
 | RI-2.1.2 | | | | | | | | | | | | | | | | | | |
 | RI-2.2.1 | | | | | | | | | | | | | | | | | | |
 | RI-3.1.1 | | | | | | | | | | | | | | | | | | |

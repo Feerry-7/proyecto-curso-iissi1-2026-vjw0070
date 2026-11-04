@@ -792,14 +792,13 @@ classDiagram
 
 - Matriz de trazabilidad entre los elementos del modelo conceptual y los requisitos.
 
-|       | EntidadX   | AsociaciónX  | RestricciónX  | Entidad2 ...   | 
-|:------|:-----------|:-----------|:-----------|:-----------|
-| RI-1.1.1  | X          | X          | X          | X          |
-| RI-2.1.1  |            | X          |            | X          |
-| RI-2.1.2  |            | X          |            | X          |
-| RI-2.2.1  | X          |            | X          | X          |
-| RI-3.1.1  |            | X          |            |            |
-| RI-3.2.1  | X          | X          | X          |            |
+     Usuario  | Cliente  | Empleado  | Dirección | Categoría | Producto | Pedido | LíneaPedido | Usuario-Cliente | Usuario-Empleado | Cliente-Dirección |Cliente-Pedido|Empleado-Pedido |Categoría-Producto |Categoría-Categoría|Producto-LíneaPedido|completa-disjunta|            
+| RI-1.1.1  |           |           |           |           |
+| RI-2.1.1  |            |           |            |           |
+| RI-2.1.2  |            |           |            |           |
+| RI-2.2.1  |           |            |          |           |
+| RI-3.1.1  |            |          |            |            |
+| RI-3.2.1  |           |           |           |            |
 | RI-4.1.1   |            |            |            |            |
 | RI-5.1.1   |            |            |            |            |
 | RI-6.1.1   |            |            |            |            |
@@ -813,7 +812,7 @@ classDiagram
 | RF-2.1   |            |            |            |            |
 | RF-2.2   |            |            |            |            |
 | RF-2.3   |            |            |            |            |
-| ####RF-2.4   |            |            |            |            |
+| F-2.4   |            |            |            |            |
 | RF-3.1   |            |            |            |            |
 | RF-3.2   |            |            |            |            |
 | RF-3.3   |            |            |            |            |
@@ -836,7 +835,7 @@ classDiagram
 | RN-005   |            |            |            |            |
 | RN-006   |            |            |            |            |
 | RN-007   |            |            |            |            |
--- fin entregable 2 --
+
 
 ## 7. Modelo relacional en 3FN
 

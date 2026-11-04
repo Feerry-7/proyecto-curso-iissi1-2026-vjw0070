@@ -829,7 +829,13 @@ classDiagram
 | RF-7.1   |            |            |            |            |
 | RF-7.2   |            |            |            |            |
 | RF-7.3   |            |            |            |            |
-
+| RN-001   |            |            |            |            |
+| RN-002   |            |            |            |            |
+| RN-003   |            |            |            |            |
+| RN-004   |            |            |            |            |
+| RN-005   |            |            |            |            |
+| RN-006   |            |            |            |            |
+| RN-007   |            |            |            |            |
 -- fin entregable 2 --
 
 ## 7. Modelo relacional en 3FN

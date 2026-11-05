@@ -638,7 +638,7 @@ para poder corregir errores o incorporar mejoras sin afectar innecesariamente al
 
 ### 5.1. Diagramas de clases UML
 
-![Modelo conceptual PetGoo](modelo-conceptual.png)
+![Modelo conceptual PetGoo](modeloConceptual.drawio.png)
 
 ### 5.2. Escenarios de prueba
 

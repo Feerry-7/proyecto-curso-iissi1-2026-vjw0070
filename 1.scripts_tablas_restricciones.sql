@@ -93,7 +93,6 @@ estado estado_enum GENERATED ALWAYS AS (
 
 
   
-);
 //-- 9. Tabla Asociativa: LineaPedido (Relación N:M entre Pedido y Producto)
 CREATE TABLE linea_pedidos (
   id INT PRIMARY KEY AUTO_INCREMENT,
